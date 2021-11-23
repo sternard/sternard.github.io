@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ruthie&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Lora", serif;
+}
+
+h1 {
+  font-family: "Ruthie", cursive;
+  font-size: 5em;
+  margin: 20px;
+}
+
+.nav-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 0;
+}
+@media (min-width: 768px) {
+  .nav-container {
+    width: 198.4px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-container {
+    width: 266.6666666667px;
+  }
+}
+
+.content-container {
+  float: right;
+  width: 100vw;
+}
+@media (min-width: 768px) {
+  .content-container {
+    width: calc(100vw - 198.4px);
+  }
+}
+@media (min-width: 1200px) {
+  .content-container {
+    width: calc(100vw - 266.6666666667px);
+  }
+}
+
+.sidebar-hamburger {
+  margin: 20px;
+  font-size: 3em;
+  color: #fff;
+}
+
+.sidebar-logo {
+  display: none;
+  text-align: center;
+  padding-top: 30px;
+}
+
+nav {
+  display: none;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  padding: 20px 0;
+}
+nav li {
+  padding: 10px;
+}
+@media (min-width: 1200px) {
+  nav {
+    font-size: 1.2em;
+  }
+}
+
+.sidebar-socials {
+  display: none;
+  margin: 30px 0;
+  font-size: 1.5em;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+  .sidebar-hamburger {
+    display: none;
+  }
+
+  .sidebar-logo {
+    display: block;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .sidebar-socials {
+    display: flex;
+  }
+}
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/1920/1080/tech");
+  box-shadow: inset 0 0 300px black;
+  background-position: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #5a95cd;
+  gap: 20px;
+  padding: 20px;
+}
+@media (min-width: 576px) {
+  .projects-container {
+    flex-direction: row;
+  }
+}
+.projects-container div {
+  display: flex;
+  color: #fff;
+  height: 240px;
+  min-width: 240px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.projects-container div .child {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://placeimg.com/640/480/tech");
+  background-size: cover;
+  background-position: center;
+}
+.projects-container div span {
+  display: none;
+}
+.projects-container div:hover .child {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
+  background-size: cover;
+  background-position: center;
+}
+.projects-container div:hover span {
+  display: inline;
+  color: #fff;
+}
+@media (min-width: 576px) {
+  .projects-container div {
+    flex: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .projects-container div:nth-child(3) {
+    flex-basis: 100%;
+    flex-grow: 100%;
+  }
+}
+
+.contact-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+.contact-container div {
+  padding: 20px;
+  background-color: #fff;
+  border: 20px solid #5a95cd;
+  margin-bottom: auto;
+}
+.contact-container div:first-child {
+  width: 100%;
+}
+.contact-container div:last-child {
+  display: none;
+  width: 35%;
+}
+@media (min-width: 992px) {
+  .contact-container div:first-child {
+    width: 65%;
+  }
+  .contact-container div:last-child {
+    display: inline;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

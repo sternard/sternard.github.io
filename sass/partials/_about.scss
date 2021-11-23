@@ -1,0 +1,92 @@
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://placeimg.com/1920/1080/tech');
+    box-shadow: inset 0 0 300px rgba(0,0,0,1);
+    background-position: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+}
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: $background;
+    gap: 20px;
+    padding: 20px;
+    @media (min-width: $small-break) {
+        flex-direction: row;
+    }
+    div {
+        display: flex;
+        color: $white;
+        height: 240px;
+        min-width: 240px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        .child {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://placeimg.com/640/480/tech');
+            background-size: cover;
+            background-position: center;
+        }
+        span {
+            display: none;
+        }
+        &:hover {
+            .child {
+                transition: .5s ease-in-out;
+                transform: scale(1.2);
+                background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://placeimg.com/640/480/tech');
+                background-size: cover;
+                background-position: center;
+            }
+            span {
+                display: inline;
+                color: $white;
+            }
+        }
+        @media (min-width: $small-break) {
+            flex: 1;
+        }
+        @media (min-width: $xl-break) {
+            &:nth-child(3) {
+                flex-basis: 100%;
+                flex-grow: 100%;
+            }
+        }
+    }
+}
+.contact-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: $white;
+    div {
+        padding: 20px;
+        background-color: $white;
+        border: 20px solid $background;
+        margin-bottom: auto;
+        &:first-child {
+            width: 100%;
+        }
+        &:last-child {
+            display: none;
+            width: 35%;
+        }
+        @media (min-width: $large-break) {
+            &:first-child {
+                width: 65%;
+            }
+            &:last-child {
+                display: inline;
+            }
+        }
+    }
+}

@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stephen Bernard Portfolio</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/230fdafe42.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Provisional</h1>
+    <div class="nav-container">
+        <div class="sidebar-hamburger"><i class="fas fa-bars"></i></div>
+        <div class="sidebar-logo">
+            <h1>SB</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>About Me</li>
+                <li><a href="#portfolio">My Portfolio</a></li>
+                <li>Coding Examples</li>
+                <li>SCS Scheme</li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-socials">
+            <span><i class="fab fa-github"></i></span>
+            <span><i class="fab fa-linkedin-in"></i></span>
+            <span<i class="fas fa-at"></i></span>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="hero-image">
+            <p>hi there, I'm</p>
+            <h1>Stephen Bernard</h1>
+            <h2>I'm a web developer</h2>
+        </div>
+        <div class="projects-container" id="portfolio">
+            <div class="parent">
+                <div class="child">
+                    <span>Project 1</span>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="child">
+                    <span>Project 2</span>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="child">
+                    <span>Project 3</span>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="child">
+                    <span>Project 4</span>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="child">
+                    <span>Project 5</span>
+                </div>
+            </div>
+        </div>
+        <div class="contact-container" id="contact">
+            <div>
+                <form class="newsletter-signup" action="#">
+                    <label for="email-name">Your Name <span class="required">*</span></label><br><input type="text" id="email-name"><br>
+                    <label for="email-address">Your Email <span class="required">*</span></label><br><input type="text" id="email-address"><br>
+                    <label for="email-subject">Subject <span class="required">*</span></label><br><input type="text" id="email-subject"><br>
+                    <label for="email-message">Message <span class="required">*</span></label><br><textarea id="email-message"></textarea><br>
+                    <button type="submit" id="email-submit">Submit</button>
+                </form>
+            </div>
+            <div>
+                <h2>Get in touch</h2>
+                <p>A paragraph about contact here.</p>
+                <h3>01234 567890</h3>
+                <h4>email@address.co.uk</h4>
+                <address>
+                    123 Address Street
+                    Address Town
+                    Addressfordshire
+                    AD12 3AS
+                </address>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
