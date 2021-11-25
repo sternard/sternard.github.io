@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Ruthie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Lora:wght@400;600&family=Ruthie&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,6 +13,11 @@ body {
 h1 {
   font-family: "Ruthie", cursive;
   font-size: 5em;
+}
+
+.coding-font {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2.5em;
 }
 
 h2 {
@@ -32,6 +37,11 @@ h4 {
 
 h5 {
   font-size: 2em;
+}
+
+h6 {
+  font-size: 1.4em;
+  padding-bottom: 10px;
 }
 
 p {
@@ -74,8 +84,10 @@ a:hover {
 }
 
 .content-container {
+  position: relative;
   float: right;
   width: 100vw;
+  padding-bottom: 76px;
 }
 @media (min-width: 768px) {
   .content-container {
@@ -86,6 +98,25 @@ a:hover {
   .content-container {
     width: calc(100vw - 266.6666666667px);
   }
+}
+
+.scroll-div {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  font-size: 2.5em;
+  text-align: center;
+}
+.scroll-div i:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.5);
+}
+.scroll-div a, .scroll-div a:visited {
+  color: grey;
+}
+.scroll-div a:hover {
+  color: #000;
 }
 
 .sidebar-hamburger {
@@ -164,6 +195,7 @@ nav li {
   }
 }
 .hero-image {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/1920/1080/tech");
@@ -174,6 +206,13 @@ nav li {
   align-items: center;
   text-align: center;
   color: #fff;
+}
+.hero-image a, .hero-image a:visited {
+  color: #fff;
+}
+.hero-image a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .small-hero-image {
@@ -308,7 +347,7 @@ nav li {
 }
 .contact-container textarea {
   resize: vertical;
-  height: 12em;
+  height: 16em;
 }
 .contact-container .required {
   color: tomato;
@@ -332,6 +371,9 @@ nav li {
   box-shadow: 0 0 5px #5a95cd;
   border: 1px solid #5a95cd;
 }
+.contact-container a {
+  color: #000;
+}
 
 .about-container {
   padding: 20px 20px 0 20px;
@@ -342,6 +384,18 @@ nav li {
   border: 20px solid #5a95cd;
   box-shadow: 0 0 10px grey;
   width: 100%;
+}
+.about-container a {
+  color: grey;
+}
+.about-container a:hover {
+  color: #000;
+}
+.about-container ul {
+  padding: 0 20px;
+}
+.about-container li {
+  padding: 0 0 8px;
 }
 
 /*# sourceMappingURL=style.css.map */
