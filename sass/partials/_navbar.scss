@@ -2,13 +2,28 @@
     margin: 20px;
     font-size: 3em;
     color: $white;
+    z-index: 10;
 }
 .sidebar-logo {
+    a {
+        color: $form-colour;
+    }
+    a:hover {
+        color: $black;
+        text-decoration: none;
+    }
     display: none;
     text-align: center;
     padding-top: 30px;
 }
 nav {
+    a {
+        color: $box-shadow;
+    }
+    a:hover {
+        color: $black;
+        text-decoration: none;
+    }
     display: none;
     text-align: center;
     ul {
@@ -23,6 +38,13 @@ nav {
     }
 }
 .sidebar-socials {
+    a {
+        color: $box-shadow;
+    }
+    a:hover {
+        color: $black;
+        text-decoration: none;
+    }
     display: none;
     margin: 30px 0;
     font-size: 1.5em;

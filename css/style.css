@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Ruthie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Ruthie&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,7 +13,47 @@ body {
 h1 {
   font-family: "Ruthie", cursive;
   font-size: 5em;
-  margin: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  padding: 20px 0;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.2em;
+  padding: 10px 0;
+  overflow-wrap: break-word;
+}
+
+h5 {
+  font-size: 2em;
+}
+
+p {
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  a {
+    text-decoration: none;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .nav-container {
@@ -24,7 +64,7 @@ h1 {
 }
 @media (min-width: 768px) {
   .nav-container {
-    width: 198.4px;
+    width: 203.2px;
   }
 }
 @media (min-width: 1200px) {
@@ -39,7 +79,7 @@ h1 {
 }
 @media (min-width: 768px) {
   .content-container {
-    width: calc(100vw - 198.4px);
+    width: calc(100vw - 203.2px);
   }
 }
 @media (min-width: 1200px) {
@@ -52,6 +92,7 @@ h1 {
   margin: 20px;
   font-size: 3em;
   color: #fff;
+  z-index: 10;
 }
 
 .sidebar-logo {
@@ -59,10 +100,24 @@ h1 {
   text-align: center;
   padding-top: 30px;
 }
+.sidebar-logo a {
+  color: #4b4b4b;
+}
+.sidebar-logo a:hover {
+  color: #000;
+  text-decoration: none;
+}
 
 nav {
   display: none;
   text-align: center;
+}
+nav a {
+  color: grey;
+}
+nav a:hover {
+  color: #000;
+  text-decoration: none;
 }
 nav ul {
   list-style-type: none;
@@ -82,6 +137,13 @@ nav li {
   margin: 30px 0;
   font-size: 1.5em;
   justify-content: space-evenly;
+}
+.sidebar-socials a {
+  color: grey;
+}
+.sidebar-socials a:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -114,6 +176,19 @@ nav li {
   color: #fff;
 }
 
+.small-hero-image {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/1920/400/tech");
+  box-shadow: inset 0 0 300px black;
+  background-position: center;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -140,12 +215,26 @@ nav li {
 .projects-container div .child {
   width: 100%;
   height: 100%;
-  background-image: url("https://placeimg.com/640/480/tech");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
   background-size: cover;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .projects-container div .child {
+    background-image: url("https://placeimg.com/640/480/tech");
+  }
+}
 .projects-container div span {
-  display: none;
+  display: inline;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .projects-container div span {
+    display: none;
+  }
+}
+.projects-container div a, .projects-container div a:visited {
+  color: white;
 }
 .projects-container div:hover .child {
   transition: 0.5s ease-in-out;
@@ -181,6 +270,7 @@ nav li {
   background-color: #fff;
   border: 20px solid #5a95cd;
   margin-bottom: auto;
+  box-shadow: 0 0 10px grey;
 }
 .contact-container div:first-child {
   width: 100%;
@@ -189,13 +279,69 @@ nav li {
   display: none;
   width: 35%;
 }
-@media (min-width: 992px) {
+@media (min-width: 1016px) {
   .contact-container div:first-child {
     width: 65%;
   }
   .contact-container div:last-child {
     display: inline;
   }
+}
+.contact-container input, .contact-container textarea {
+  padding: 10px;
+  font-family: "Lora", serif;
+  font-size: 0.9em;
+  color: #4b4b4b;
+  margin: 5px 0 20px;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  width: 100%;
+  outline-width: 0;
+  background: #f1f1f1;
+}
+.contact-container input:hover, .contact-container textarea:hover {
+  box-shadow: 0 0 5px #5BC0DE;
+}
+.contact-container input:focus, .contact-container textarea:focus {
+  border: 1px solid #5a95cd;
+  box-shadow: 0 0 5px #5a95cd;
+}
+.contact-container textarea {
+  resize: vertical;
+  height: 12em;
+}
+.contact-container .required {
+  color: tomato;
+}
+.contact-container button {
+  padding: 15px 20px;
+  font-family: "Lora", serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #CCCCCC;
+  background: #f1f1f1;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  color: #4b4b4b;
+}
+.contact-container button:hover {
+  box-shadow: 0 0 5px #5BC0DE;
+}
+.contact-container button:focus {
+  box-shadow: 0 0 5px #5a95cd;
+  border: 1px solid #5a95cd;
+}
+
+.about-container {
+  padding: 20px 20px 0 20px;
+}
+.about-container div {
+  padding: 20px;
+  background-color: #fff;
+  border: 20px solid #5a95cd;
+  box-shadow: 0 0 10px grey;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

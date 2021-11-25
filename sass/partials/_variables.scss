@@ -1,12 +1,19 @@
 //Breakpoints
 $small-break: 576px;
 $medium-break: 768px;
-$large-break: 992px;
+$large-break: 1016px;
 $xl-break: 1200px;
 
 //Colours
 $white: #fff;
+$black: #000;
 $background: rgb(90, 149, 205);
+$box-shadow: grey;
+$req-red: tomato;
+$form-highlight: #5BC0DE;
+$form-border: #CCCCCC;
+$form-background: #f1f1f1;
+$form-colour: rgb(75, 75, 75);
 
 //Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Ruthie&display=swap');
