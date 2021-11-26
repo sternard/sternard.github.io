@@ -185,6 +185,34 @@
     a:hover {
         color: $black;
     }
+}
+
+.half-container {
+    display: block;
+    padding: 20px 20px 0px 20px;
+    @media (min-width: $large-break) {
+        display: flex;
+        padding: 20px;
+    }
+    gap: 20px;
+    div {
+        padding: 20px;
+        background-color: $white;
+        border: 20px solid $background;
+        box-shadow: 0 0 10px $box-shadow;
+        width: 100%;
+        margin-bottom: 20px;
+        overflow-wrap: break-word;
+        @media (min-width: $large-break) {
+            margin-bottom: auto;
+        }
+    }
+    a {
+        color: $box-shadow;
+    }
+    a:hover {
+        color: $black;
+    }
     ul {
         padding: 0 20px;
     }
