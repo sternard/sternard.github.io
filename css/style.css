@@ -10,6 +10,10 @@ body {
   font-family: "Lora", serif;
 }
 
+iframe {
+  width: 100%;
+}
+
 h1 {
   font-family: "Ruthie", cursive;
   font-size: 5em;
@@ -67,7 +71,8 @@ a:hover {
 }
 
 .nav-container {
-  position: sticky;
+  position: fixed;
+  background-color: #ededed;
   top: 0;
   height: 100vh;
   width: 0;
@@ -93,21 +98,23 @@ a:hover {
 @media (min-width: 768px) {
   .content-container {
     width: calc(100vw - 203.2px);
+    margin-left: 203.2px;
   }
 }
 @media (min-width: 1200px) {
   .content-container {
     width: calc(100vw - 266.6666666667px);
+    margin-left: 266.6666666667px;
   }
 }
 
 .scroll-div {
+  display: block;
   position: absolute;
   bottom: 0;
-  padding: 20px;
-  width: 100%;
+  padding: 20px 0px;
   font-size: 2.5em;
-  text-align: center;
+  left: calc(50vw - 20px);
 }
 .scroll-div i:hover {
   transition: 0.3s ease-in-out;
@@ -119,11 +126,26 @@ a:hover {
 .scroll-div a:hover {
   color: #000;
 }
+@media (min-width: 768px) {
+  .scroll-div {
+    left: calc((100vw - 153.6px) / 2 - 20px);
+  }
+}
+@media (min-width: 1016px) {
+  .scroll-div {
+    left: calc((100vw - 203.2px) / 2 - 20px);
+  }
+}
+@media (min-width: 1200px) {
+  .scroll-div {
+    left: calc((100vw - 266.6666666667px) / 2 - 20px);
+  }
+}
 
 .sidebar-hamburger {
   margin: 20px;
   font-size: 3em;
-  color: #fff;
+  color: #ededed;
 }
 
 .sidebar-logo {
@@ -167,6 +189,7 @@ nav li {
   display: none;
   margin: 30px 0;
   font-size: 1.5em;
+  text-align: center;
   justify-content: space-evenly;
 }
 .sidebar-socials a {
@@ -175,6 +198,16 @@ nav li {
 .sidebar-socials a:hover {
   color: #000;
   text-decoration: none;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sidebar-socials span {
+    padding: 0 22px;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 1200px), (-ms-high-contrast: active) and (min-width: 1200px) {
+  .sidebar-socials span {
+    padding: 0 33px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -326,6 +359,11 @@ nav li {
     display: inline;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .contact-container div {
+    margin: 0 10px;
+  }
+}
 .contact-container input, .contact-container textarea {
   padding: 10px;
   font-family: "Lora", serif;
@@ -336,7 +374,7 @@ nav li {
   border-radius: 3px;
   width: 100%;
   outline-width: 0;
-  background: #f1f1f1;
+  background: #ededed;
 }
 .contact-container input:hover, .contact-container textarea:hover {
   box-shadow: 0 0 5px #5BC0DE;
@@ -359,7 +397,7 @@ nav li {
   text-transform: uppercase;
   font-weight: 600;
   border: 1px solid #CCCCCC;
-  background: #f1f1f1;
+  background: #ededed;
   border-radius: 3px;
   letter-spacing: 2px;
   color: #4b4b4b;

@@ -1,7 +1,7 @@
 .sidebar-hamburger {
     margin: 20px;
     font-size: 3em;
-    color: $white;
+    color: $form-background;
 }
 .sidebar-logo {
     a {
@@ -47,6 +47,17 @@ nav {
     display: none;
     margin: 30px 0;
     font-size: 1.5em;
+    text-align: center;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { // IE fix
+        span {
+            padding: 0 22px;
+        }
+        @media (min-width: $xl-break) {
+            span {
+                padding: 0 33px;
+            }
+        }
+    }
     justify-content: space-evenly;
 }
 

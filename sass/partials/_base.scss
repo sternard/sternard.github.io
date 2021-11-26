@@ -7,6 +7,9 @@ body {
     display: flex;
     font-family: 'Lora', serif;
 }
+iframe {
+    width: 100%;
+}
 h1 {
     font-family: 'Ruthie', cursive;
     font-size: 5em;
@@ -50,7 +53,9 @@ a:hover {
     }
 }
 .nav-container {
-    position: sticky;
+    position: fixed; //for legacy browser support (looking at you IE)
+    //position: sticky;
+    background-color: $form-background;
     top: 0;
     height: 100vh;
     width: 0;
@@ -74,20 +79,21 @@ a:hover {
     // }
     // @media (min-width: $large-break) {
         width: calc(100vw - ($large-break/5));
+        margin-left: calc($large-break/5);
     }
     @media (min-width: $xl-break) {
         width: calc(100vw - ($xl-break/4.5));
+        margin-left: calc($xl-break/4.5);
     }
     padding-bottom: 76px;
 }
 
 .scroll-div {
+    display: block;
     position: absolute;
     bottom: 0;
-    padding: 20px;
-    width: 100%;
+    padding: 20px 0px;
     font-size: 2.5em;
-    text-align: center;
     i:hover {
         transition: .3s ease-in-out;
         transform: scale(1.5);
@@ -97,5 +103,15 @@ a:hover {
     }
     a:hover {
         color: $black;
+    }
+    left: calc((100vw/2) - 20px);
+    @media (min-width: $medium-break) {
+        left: calc((100vw - ($medium-break/5))/2 - 20px);
+    }
+    @media (min-width: $large-break) {
+        left: calc((100vw - ($large-break/5))/2 - 20px);
+    }
+    @media (min-width: $xl-break) {
+        left: calc((100vw - ($xl-break/4.5))/2 - 20px);
     }
 }
