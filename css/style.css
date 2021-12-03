@@ -12,6 +12,7 @@ html {
 body {
   display: flex;
   font-family: "Lora", serif;
+  background-color: #ededed;
 }
 
 iframe {
@@ -75,12 +76,15 @@ a:hover {
 }
 
 .nav-container {
+  transition: 1s;
+  left: 0;
   position: fixed;
   background-color: #ededed;
   top: 0;
   height: 100vh;
   width: 0;
   z-index: 10;
+  word-break: keep-all;
 }
 @media (min-width: 768px) {
   .nav-container {
@@ -93,9 +97,27 @@ a:hover {
   }
 }
 
+.nav-container.open {
+  width: 266.6666666667px;
+}
+.nav-container.open .sidebar-hamburger span {
+  background: grey;
+}
+.nav-container.open .sidebar-logo {
+  display: block;
+}
+.nav-container.open nav {
+  display: block;
+  font-size: 1.2em;
+}
+.nav-container.open .sidebar-socials {
+  display: flex;
+}
+
 .content-container {
   position: relative;
   float: right;
+  background-color: #fff;
   width: 100vw;
   padding-bottom: 76px;
 }
@@ -147,9 +169,76 @@ a:hover {
 }
 
 .sidebar-hamburger {
-  margin: 20px;
-  font-size: 3em;
-  color: #ededed;
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 25px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.sidebar-hamburger span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #ededed;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.sidebar-hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.sidebar-hamburger span:nth-child(2), .sidebar-hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+.sidebar-hamburger span:nth-child(4) {
+  top: 36px;
+}
+
+.sidebar-hamburger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.sidebar-hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sidebar-hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sidebar-hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }
 
 .sidebar-logo {
