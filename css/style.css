@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Lora:wght@400;600&family=Ruthie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lora:wght@400;600&family=Ruthie&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,7 +25,7 @@ h1 {
 }
 
 .coding-font {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Courier Prime", monospace;
   font-size: 2.5em;
 }
 
@@ -172,7 +172,7 @@ a:hover {
   width: 60px;
   height: 45px;
   position: relative;
-  margin: 25px;
+  margin: 30px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -189,7 +189,7 @@ a:hover {
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #ededed;
+  background: #cd925a;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -429,6 +429,7 @@ nav li {
   gap: 15px;
   padding: 15px;
   background-color: #fff;
+  font-size: 0.9em;
 }
 .contact-container div {
   padding: 15px;
@@ -457,10 +458,13 @@ nav li {
     margin: 0 7.5px;
   }
 }
+.contact-container ::placeholder {
+  font-family: "Lora", serif;
+}
 .contact-container input, .contact-container textarea {
   padding: 10px;
-  font-family: "Lora", serif;
-  font-size: 0.9em;
+  font-family: "Courier Prime", monospace;
+  font-size: 1em;
   color: #4b4b4b;
   margin: 5px 0 20px;
   border: 1px solid #CCCCCC;
@@ -475,6 +479,9 @@ nav li {
 .contact-container input:focus, .contact-container textarea:focus {
   border: 1px solid #5a95cd;
   box-shadow: 0 0 5px #5a95cd;
+}
+.contact-container #phone-number::placeholder, .contact-container #email-subject::placeholder {
+  color: silver;
 }
 .contact-container textarea {
   resize: vertical;

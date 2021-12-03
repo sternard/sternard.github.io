@@ -98,6 +98,7 @@
     gap: $gap-size;
     padding: $gap-size;
     background-color: $white;
+    font-size: 0.9em;
     div {
         padding: $gap-size;
         background-color: $white;
@@ -123,10 +124,14 @@
             margin: 0 calc($gap-size/2);
         }
     }
+    
+    ::placeholder {
+        font-family: 'Lora', serif;
+    }
     input, textarea {
         padding: 10px;
-        font-family: 'Lora', serif;
-        font-size: 0.9em;
+        font-family: 'Courier Prime', monospace;
+        font-size: 1em;
         color: $form-colour;
         margin: 5px 0 20px;
         border: 1px solid $form-border;
@@ -141,6 +146,12 @@
             border: 1px solid $background;
             box-shadow: 0 0 5px $background;
         }
+    }
+    #phone-number, #email-subject {
+        &::placeholder { 
+            color: lighten($box-shadow, 25%);
+        }
+
     }
     textarea {
         resize: vertical;

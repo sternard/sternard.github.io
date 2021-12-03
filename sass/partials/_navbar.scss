@@ -2,7 +2,7 @@
     width: 60px;
     height: 45px;
     position: relative;
-    margin: 25px;
+    margin: 30px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -19,7 +19,7 @@
     position: absolute;
     height: 9px;
     width: 100%;
-    background: $form-background;
+    background: complement($background);
     border-radius: 9px;
     opacity: 1;
     left: 0;
