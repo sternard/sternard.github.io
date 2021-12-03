@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   font-family: "Lora", serif;
@@ -266,8 +270,8 @@ nav li {
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #5a95cd;
-  gap: 20px;
-  padding: 20px;
+  gap: 15px;
+  padding: 15px;
 }
 @media (min-width: 576px) {
   .projects-container {
@@ -333,14 +337,14 @@ nav li {
 
 .contact-container {
   display: flex;
-  gap: 20px;
-  padding: 20px;
+  gap: 15px;
+  padding: 15px;
   background-color: #fff;
 }
 .contact-container div {
-  padding: 20px;
+  padding: 15px;
   background-color: #fff;
-  border: 20px solid #5a95cd;
+  border: 15px solid #5a95cd;
   margin-bottom: auto;
   box-shadow: 0 0 10px grey;
 }
@@ -361,7 +365,7 @@ nav li {
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .contact-container div {
-    margin: 0 10px;
+    margin: 0 7.5px;
   }
 }
 .contact-container input, .contact-container textarea {
@@ -414,12 +418,12 @@ nav li {
 }
 
 .about-container {
-  padding: 20px 20px 0 20px;
+  padding: 15px 15px 0 15px;
 }
 .about-container div {
-  padding: 20px;
+  padding: 15px;
   background-color: #fff;
-  border: 20px solid #5a95cd;
+  border: 15px solid #5a95cd;
   box-shadow: 0 0 10px grey;
   width: 100%;
 }
@@ -432,22 +436,22 @@ nav li {
 
 .half-container {
   display: block;
-  padding: 20px 20px 0px 20px;
-  gap: 20px;
+  padding: 15px 15px 0px 15px;
+  gap: 15px;
 }
 @media (min-width: 1016px) {
   .half-container {
     display: flex;
-    padding: 20px;
+    padding: 15px;
   }
 }
 .half-container div {
-  padding: 20px;
+  padding: 15px;
   background-color: #fff;
-  border: 20px solid #5a95cd;
+  border: 15px solid #5a95cd;
   box-shadow: 0 0 10px grey;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   overflow-wrap: break-word;
 }
 @media (min-width: 1016px) {
