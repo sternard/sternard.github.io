@@ -46,6 +46,7 @@ h4 {
 
 h5 {
   font-size: 2em;
+  color: #000;
 }
 
 h6 {
@@ -430,6 +431,10 @@ nav li {
   padding: 15px;
   background-color: #fff;
   font-size: 0.9em;
+  color: #4b4b4b;
+}
+.contact-container .fa-phone {
+  color: green;
 }
 .contact-container div {
   padding: 15px;

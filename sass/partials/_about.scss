@@ -99,6 +99,10 @@
     padding: $gap-size;
     background-color: $white;
     font-size: 0.9em;
+    color: $form-colour;
+    .fa-phone {
+        color: green;
+    }
     div {
         padding: $gap-size;
         background-color: $white;
