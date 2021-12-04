@@ -1,4 +1,4 @@
-let size = 20;
+let size = 18;
 let x = size/2;
 let y = size/2;
 const startingPos = x+","+y;
