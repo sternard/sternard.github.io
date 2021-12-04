@@ -90,7 +90,6 @@ function moveSnake() {
 
         if (visited.at(-1) != x+","+y || visited.at(0) != startingPos) {
             visited.unshift(x+","+y);
-            console.log(startingPos);
         }
       }
       else { game = "over"; }
@@ -109,15 +108,14 @@ function moveSnake() {
 
       //check food square is ticked
       checkFood();
+
+      //check end conditions
+      if (game === "over" && document.getElementById("scoreboard").innerHTML.startsWith("SCORE")){
+        document.getElementById("scoreboard").innerHTML = 
+        "FINAL SCORE: "+score+"<br><br><a href='javascript:location.reload();'>NEW GAME</a>";
+        console.log("Game over");
+      }
     }
   }
   setInterval(moveSnake, speed);
-}
-
-function update() {
-  if (game === "over" && document.getElementById("scoreboard").innerHTML.startsWith("SCORE")){
-    document.getElementById("scoreboard").innerHTML = 
-    "FINAL SCORE: "+score+"<br><br><a href='javascript:location.reload();'>NEW GAME</a>";
-    console.log("Game over");
-  }
 }
