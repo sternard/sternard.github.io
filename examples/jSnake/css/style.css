@@ -28,7 +28,19 @@ input[type=checkbox] {
 }
 @media (max-width: 369px) {
    input[type=checkbox] {
-      width: 10px;
-      height: 10px;
+      width: 9px;
+      height: 9px;
+   }
+}
+@media (max-width: 290px) {
+   input[type=checkbox] {
+      width: 7px;
+      height: 7px;
+   }
+}
+@media (max-width: 250px) {
+   input[type=checkbox] {
+      width: 6px;
+      height: 6px;
    }
 }
