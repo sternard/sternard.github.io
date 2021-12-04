@@ -1,0 +1,28 @@
+
+.container {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+input[type=checkbox] {
+   margin: 0;
+}
+
+#scoreboard {
+   text-align: center;
+   margin: 20px;
+   font-weight: 600;
+   font-family: 'Press Start 2P', cursive;
+}
+
+#scoreboard, a, a:visited {
+   color: black;
+}
+
+@media (hover: hover) and (pointer: fine) { 
+   #joystick {
+      display: none;
+   }
+}
