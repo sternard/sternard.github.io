@@ -118,4 +118,17 @@ function moveSnake() {
     }
   }
   setInterval(moveSnake, speed);
+
+  document.getElementById("submitLeft").onclick = function () { 
+    direction = "left"; doubleClickCatcher = true; 
+  }
+  document.getElementById("submitRight").onclick = function () { 
+    direction = "right"; doubleClickCatcher = true; 
+  }
+  document.getElementById("submitUp").onclick = function () { 
+    direction = "up"; doubleClickCatcher = true; 
+  }
+  document.getElementById("submitDown").onclick = function () { 
+    direction = "down"; doubleClickCatcher = true; 
+  }
 }
