@@ -116,8 +116,9 @@ function moveSnake() {
         console.log("Game over");
       }
     }
+    requestAnimationFrame(moveSnake);
   }
-  setInterval(moveSnake, speed);
+  requestAnimationFrame(moveSnake);
 
   document.getElementById("submitLeft").onclick = function () { 
     direction = "left"; doubleClickCatcher = true; 
