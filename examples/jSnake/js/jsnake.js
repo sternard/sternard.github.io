@@ -115,10 +115,11 @@ function moveSnake() {
         "FINAL SCORE: "+score+"<br><br><a href='javascript:location.reload();'>NEW GAME</a>";
         console.log("Game over");
       }
+
+      document.getElementById("currentDirection").value = direction;
     }
-    requestAnimationFrame(moveSnake);
   }
-  requestAnimationFrame(moveSnake);
+  setInterval(moveSnake, speed);
 
   document.getElementById("submitLeft").onclick = function () { 
     direction = "left"; doubleClickCatcher = true; 
