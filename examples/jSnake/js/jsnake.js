@@ -73,6 +73,7 @@ function checkFood() {
 function moveSnake() {
   if (game != "over")
   {
+    alert("We are into the move snake event");
   doubleClickCatcher = false; //lets you input again
   let arr = visited.slice(0, score); //all coordinates limited to current length of snake
 
@@ -114,6 +115,9 @@ function moveSnake() {
       "FINAL SCORE: "+score+"<br><br><a href='javascript:location.reload();'>NEW GAME</a>";
       console.log("Game over");
     }
+  }else{
+
+    alert("Game does not let us open");
   }
 }
 
