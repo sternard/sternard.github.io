@@ -45,6 +45,14 @@ function checkKey(e) { //set direction on keypress
   }
 }
 
+document.addEventListener("touchmove", checkJoystick);
+function checkJoystick() {
+  if (document.getElementById("joystickXvalue").value > 0.5) { direction = "right"; doubleClickCatcher = true; }
+  if (document.getElementById("joystickXvalue").value < -0.4) { direction = "left"; doubleClickCatcher = true; }
+  if (document.getElementById("joystickYvalue").value < -0.4) { direction = "up"; doubleClickCatcher = true; }
+  if (document.getElementById("joystickYvalue").value > 0.5) { direction = "down"; doubleClickCatcher = true; }
+}
+
 function placeFood() {
     let i = Math.floor((Math.random() * size) + 1);
     let j = Math.floor((Math.random() * size) + 1);
@@ -58,10 +66,6 @@ function checkFood() {
   if (document.getElementById(currentFood).checked === false) { //make sure a food square is available
     document.getElementById(currentFood).checked = true;
   }
-}
-
-function stopDoubleClicking() {
-  doubleClickCatcher = false;
 }
 
 window.onload = function() {
@@ -93,12 +97,6 @@ function moveSnake() {
         }
       }
       else { game = "over"; }
-
-      //check joystick
-      if (document.getElementById("joystickXvalue").value > 0.5) { direction = "right"; doubleClickCatcher = true; }
-      if (document.getElementById("joystickXvalue").value < -0.4) { direction = "left"; doubleClickCatcher = true; }
-      if (document.getElementById("joystickYvalue").value < -0.4) { direction = "up"; doubleClickCatcher = true; }
-      if (document.getElementById("joystickYvalue").value > 0.5) { direction = "down"; doubleClickCatcher = true; }
 
       //Move snake
       if (direction === "right") { y++; }
