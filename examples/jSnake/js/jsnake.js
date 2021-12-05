@@ -51,6 +51,8 @@ function checkJoystick() {
   if (document.getElementById("joystickXvalue").value < -0.4) { direction = "left"; doubleClickCatcher = true; }
   if (document.getElementById("joystickYvalue").value < -0.4) { direction = "up"; doubleClickCatcher = true; }
   if (document.getElementById("joystickYvalue").value > 0.5) { direction = "down"; doubleClickCatcher = true; }
+
+  document.getElementById("currentDirection").value = direction;
 }
 
 function placeFood() {
@@ -113,8 +115,6 @@ function moveSnake() {
         "FINAL SCORE: "+score+"<br><br><a href='javascript:location.reload();'>NEW GAME</a>";
         console.log("Game over");
       }
-
-      document.getElementById("currentDirection").value = direction;
     }
   }
   setInterval(moveSnake, speed);
