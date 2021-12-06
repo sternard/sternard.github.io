@@ -66,7 +66,7 @@
         &:hover { //only affects placeholder, can all be removed when placeholders are replaced
             .child {
                 transition: .5s ease-in-out;
-                transform: scale(1.2);
+                transform: blur(1.2);
                 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://placeimg.com/640/480/tech');
                 background-size: cover;
                 background-position: center;

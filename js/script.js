@@ -1,3 +1,10 @@
+$("#card").flip();
+$("#card2").flip();
+
+$('.child').click((event) => { //close menu when tap outside of it
+  event.preventDefault(); //stop from opening links etc    
+});
+
 //Mobile menu
 let $menuOpen = false;
 let $mobileWidth = window.matchMedia( "(min-width: 768px)" );

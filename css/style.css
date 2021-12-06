@@ -392,7 +392,7 @@ nav li {
 }
 .projects-container div:hover .child {
   transition: 0.5s ease-in-out;
-  transform: scale(1.2);
+  transform: blur(1.2);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
   background-size: cover;
   background-position: center;
@@ -420,7 +420,7 @@ nav li {
 }
 .projects-container div .netmatters-example:hover {
   transition: 0.5s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.05);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
   background-size: cover;
   cursor: pointer;
@@ -448,7 +448,7 @@ nav li {
 }
 .projects-container div .togglemenu-example:hover {
   transition: 0.5s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.05);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
   background-size: cover;
   cursor: pointer;

@@ -15,7 +15,7 @@
         }
         &:hover {
             transition: .5s ease-in-out;
-            transform: scale(1.2);
+            transform: scale(1.05);
             background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/'+$example+'.png');
             background-size: cover;
             cursor: pointer;
