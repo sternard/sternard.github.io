@@ -89,7 +89,7 @@ a:hover {
 }
 @media (min-width: 768px) {
   .nav-container {
-    width: 203.2px;
+    width: 195.8px;
   }
 }
 @media (min-width: 1200px) {
@@ -124,8 +124,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .content-container {
-    width: calc(100vw - 203.2px);
-    margin-left: 203.2px;
+    width: calc(100vw - 195.8px);
+    margin-left: 195.8px;
   }
 }
 @media (min-width: 1200px) {
@@ -158,9 +158,9 @@ a:hover {
     left: calc((100vw - 153.6px) / 2 - 20px);
   }
 }
-@media (min-width: 1016px) {
+@media (min-width: 979px) {
   .scroll-div {
-    left: calc((100vw - 203.2px) / 2 - 20px);
+    left: calc((100vw - 195.8px) / 2 - 20px);
   }
 }
 @media (min-width: 1200px) {
@@ -360,8 +360,8 @@ nav li {
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #5a95cd;
-  gap: 15px;
-  padding: 15px;
+  gap: 12px;
+  padding: 12px;
 }
 @media (min-width: 576px) {
   .projects-container {
@@ -483,8 +483,8 @@ nav li {
 
 .contact-container {
   display: flex;
-  gap: 15px;
-  padding: 15px;
+  gap: 12px;
+  padding: 12px;
   background-color: #fff;
   font-size: 0.9em;
   color: #4b4b4b;
@@ -493,9 +493,9 @@ nav li {
   color: green;
 }
 .contact-container div {
-  padding: 15px;
+  padding: 12px;
   background-color: #fff;
-  border: 15px solid #5a95cd;
+  border: 12px solid #5a95cd;
   margin-bottom: auto;
   box-shadow: 0 0 10px grey;
 }
@@ -506,7 +506,7 @@ nav li {
   display: none;
   width: 35%;
 }
-@media (min-width: 1016px) {
+@media (min-width: 979px) {
   .contact-container div:first-child {
     width: 65%;
   }
@@ -516,7 +516,7 @@ nav li {
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .contact-container div {
-    margin: 0 7.5px;
+    margin: 0 6px;
   }
 }
 .contact-container ::placeholder {
@@ -575,12 +575,12 @@ nav li {
 }
 
 .about-container {
-  padding: 15px 15px 0 15px;
+  padding: 12px 12px 0 12px;
 }
 .about-container div {
-  padding: 15px;
+  padding: 12px;
   background-color: #fff;
-  border: 15px solid #5a95cd;
+  border: 12px solid #5a95cd;
   box-shadow: 0 0 10px grey;
   width: 100%;
 }
@@ -593,25 +593,25 @@ nav li {
 
 .half-container {
   display: block;
-  padding: 15px 15px 0px 15px;
-  gap: 15px;
+  padding: 12px 12px 0px 12px;
+  gap: 12px;
 }
-@media (min-width: 1016px) {
+@media (min-width: 979px) {
   .half-container {
     display: flex;
-    padding: 15px;
+    padding: 12px;
   }
 }
 .half-container div {
-  padding: 15px;
+  padding: 12px;
   background-color: #fff;
-  border: 15px solid #5a95cd;
+  border: 12px solid #5a95cd;
   box-shadow: 0 0 10px grey;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   overflow-wrap: break-word;
 }
-@media (min-width: 1016px) {
+@media (min-width: 979px) {
   .half-container div {
     margin-bottom: auto;
   }
