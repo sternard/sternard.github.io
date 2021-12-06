@@ -20,9 +20,10 @@ $mobileWidth.addEventListener("change", () => {
   }
 });
 
-$(document).click((event) => {
-    if (!$(event.target).closest('.nav-container').length && $menuOpen) {
-        $toggleMenu();
+$(document).click((event) => { //close menu when tap outside of it
+    if (!$(event.target).closest('.nav-container').length && $menuOpen) { //check if menu is open
+      event.preventDefault(); //stop from opening links etc
+      $toggleMenu(); //close menu
     }        
 });
 

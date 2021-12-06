@@ -326,8 +326,8 @@ nav li {
   display: flex;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/1920/1080/tech");
-  box-shadow: inset 0 0 300px black;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -381,14 +381,39 @@ nav li {
 .projects-container div .child {
   width: 100%;
   height: 100%;
+  padding: 10px 60px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
-  background-size: cover;
+  background-size: stretch;
   background-position: center;
 }
 @media (min-width: 768px) {
   .projects-container div .child {
     background-image: url("https://placeimg.com/640/480/tech");
   }
+}
+.projects-container div .netmatters-example {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .projects-container div .netmatters-example {
+    background-image: url("../images/netmatters.png");
+  }
+}
+.projects-container div .netmatters-example:hover {
+  text-decoration: none;
+}
+.projects-container div .togglemenu-example {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .projects-container div .togglemenu-example {
+    background-image: url("../images/togglemenu.png");
+  }
+}
+.projects-container div .togglemenu-example:hover {
+  text-decoration: none;
 }
 .projects-container div span {
   display: inline;
@@ -408,6 +433,16 @@ nav li {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
   background-size: cover;
   background-position: center;
+}
+.projects-container div:hover .netmatters-example {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.projects-container div:hover .togglemenu-example {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
+  background-size: cover;
+  cursor: pointer;
 }
 .projects-container div:hover span {
   display: inline;
