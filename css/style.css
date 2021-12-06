@@ -414,6 +414,10 @@ nav li {
 .projects-container div .netmatters-example div {
   padding: 0 15%;
 }
+.projects-container div .netmatters-example div strong {
+  display: block;
+  margin-bottom: 8px;
+}
 .projects-container div .netmatters-example:hover {
   transition: 0.5s ease-in-out;
   transform: scale(1.2);
@@ -437,6 +441,10 @@ nav li {
 }
 .projects-container div .togglemenu-example div {
   padding: 0 15%;
+}
+.projects-container div .togglemenu-example div strong {
+  display: block;
+  margin-bottom: 8px;
 }
 .projects-container div .togglemenu-example:hover {
   transition: 0.5s ease-in-out;

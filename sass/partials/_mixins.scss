@@ -8,6 +8,10 @@
         text-decoration: none;
         div {
             padding: 0 15%;
+            strong {
+                display: block;
+                margin-bottom: 8px;
+            }
         }
         &:hover {
             transition: .5s ease-in-out;
