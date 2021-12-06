@@ -14,17 +14,23 @@ $(document).ready(function(){
 	$('.sidebar-hamburger').click($toggleMenu);
 });
 
+
+
 $mobileWidth.addEventListener("change", () => {
   if ($mobileWidth.matches && $menuOpen) {
     $toggleMenu();
   }
 });
 
-$(document).click((event) => { //close menu when tap outside of it
-    if (!$(event.target).closest('.nav-container').length && $menuOpen) { //check if menu is open
+$(document).click((event) => { //on click
+    if (!$(event.target).closest('.nav-container').length && $menuOpen) { //check if menu is open and clicking outside of it
       event.preventDefault(); //stop from opening links etc
       $toggleMenu(); //close menu
-    }        
+    }    
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+      && $('.child').click()) { //if one of the cards is clicked on a mobile device
+        alert("Clicked"); 
+    }    
 });
 
 
