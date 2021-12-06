@@ -381,9 +381,8 @@ nav li {
 .projects-container div .child {
   width: 100%;
   height: 100%;
-  padding: 10px 60px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
-  background-size: stretch;
+  background-size: cover;
   background-position: center;
 }
 @media (min-width: 768px) {
@@ -391,29 +390,64 @@ nav li {
     background-image: url("https://placeimg.com/640/480/tech");
   }
 }
+.projects-container div:hover .child {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
+  background-size: cover;
+  background-position: center;
+}
+.projects-container div:hover .child span {
+  display: inline;
+  color: #fff;
+}
 .projects-container div .netmatters-example {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
   background-size: cover;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .projects-container div .netmatters-example {
     background-image: url("../images/netmatters.png");
   }
 }
+.projects-container div .netmatters-example div {
+  padding: 0 15%;
+}
 .projects-container div .netmatters-example:hover {
-  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.projects-container div .netmatters-example:hover span {
+  display: inline;
+  color: #fff;
 }
 .projects-container div .togglemenu-example {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
   background-size: cover;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .projects-container div .togglemenu-example {
     background-image: url("../images/togglemenu.png");
   }
 }
+.projects-container div .togglemenu-example div {
+  padding: 0 15%;
+}
 .projects-container div .togglemenu-example:hover {
-  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
+  background-size: cover;
+  cursor: pointer;
+}
+.projects-container div .togglemenu-example:hover span {
+  display: inline;
+  color: #fff;
 }
 .projects-container div span {
   display: inline;
@@ -426,27 +460,6 @@ nav li {
 }
 .projects-container div a, .projects-container div a:visited {
   color: white;
-}
-.projects-container div:hover .child {
-  transition: 0.5s ease-in-out;
-  transform: scale(1.2);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
-  background-size: cover;
-  background-position: center;
-}
-.projects-container div:hover .netmatters-example {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
-  background-size: cover;
-  cursor: pointer;
-}
-.projects-container div:hover .togglemenu-example {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
-  background-size: cover;
-  cursor: pointer;
-}
-.projects-container div:hover span {
-  display: inline;
-  color: #fff;
 }
 @media (min-width: 576px) {
   .projects-container div {

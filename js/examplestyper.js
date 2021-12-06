@@ -5,4 +5,4 @@ let typewriter = new Typewriter(type, {
     loop: false
 });
 
-typewriter.typeString('>cd "/coding_examples"').start();
+typewriter.typeString('>cd "/coding _examples"').start();

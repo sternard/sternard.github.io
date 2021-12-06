@@ -1,0 +1,24 @@
+@mixin portfolio-card($example) {
+    .#{$example}-example {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/'+$example+'.png');
+        @media (min-width: $medium-break) {
+            background-image: url('../images/'+$example+'.png');
+        }
+        background-size: cover;
+        text-decoration: none;
+        div {
+            padding: 0 15%;
+        }
+        &:hover {
+            transition: .5s ease-in-out;
+            transform: scale(1.2);
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/'+$example+'.png');
+            background-size: cover;
+            cursor: pointer;
+            span {
+                display: inline;
+                color: $white;
+            }
+        }
+    }
+}
