@@ -1,4 +1,3 @@
-
 //Mobile menu
 let $menuOpen = false;
 let $mobileWidth = window.matchMedia( "(min-width: 768px)" );
