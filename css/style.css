@@ -279,10 +279,13 @@ nav li {
 
 .sidebar-socials {
   display: none;
-  margin: 30px 0;
+  margin: 30px auto;
   font-size: 1.5em;
   text-align: center;
   justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .sidebar-socials a {
   color: grey;
