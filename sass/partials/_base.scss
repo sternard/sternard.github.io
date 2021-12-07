@@ -121,10 +121,10 @@ a:hover {
         transform: scale(1.5);
     }
     a, a:visited {
-        color: $box-shadow;
+        color: complement($background);
     }
     a:hover {
-        color: $black;
+        color: darken(complement($background), 5%);
     }
     left: calc((100vw/2) - 20px);
     @media (min-width: $medium-break) {
@@ -136,4 +136,8 @@ a:hover {
     @media (min-width: $xl-break) {
         left: calc((100vw - ($xl-break/4.5))/2 - 20px);
     }
+}
+
+.blue-background {
+    background-color: $background;
 }

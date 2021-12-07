@@ -145,10 +145,10 @@ a:hover {
   transform: scale(1.5);
 }
 .scroll-div a, .scroll-div a:visited {
-  color: grey;
+  color: #e2ad7b;
 }
 .scroll-div a:hover {
-  color: #000;
+  color: #dda066;
 }
 @media (min-width: 768px) {
   .scroll-div {
@@ -164,6 +164,10 @@ a:hover {
   .scroll-div {
     left: calc((100vw - 266.6666666667px) / 2 - 20px);
   }
+}
+
+.blue-background {
+  background-color: #7bb0e2;
 }
 
 .sidebar-hamburger {
