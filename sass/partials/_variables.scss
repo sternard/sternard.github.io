@@ -10,10 +10,10 @@ $gap-size: 12px;
 //Colours
 $white: #fff;
 $black: #000;
-$background: rgb(90, 149, 205);
+$background: rgb(123, 176, 226);
 $box-shadow: grey;
 $req-red: tomato;
-$form-highlight: #5BC0DE;
+$form-highlight: lighten($background, 5%);
 $form-border: #CCCCCC;
 $form-background: #ededed;
 $form-colour: rgb(75, 75, 75);

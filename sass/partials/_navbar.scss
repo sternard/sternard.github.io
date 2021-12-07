@@ -1,7 +1,8 @@
 .sidebar-hamburger {
     width: 60px;
     height: 45px;
-    position: relative;
+    position: fixed;
+    right: 0;
     margin: 30px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);

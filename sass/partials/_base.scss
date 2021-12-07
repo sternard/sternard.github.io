@@ -58,7 +58,7 @@ a:hover {
     }
 }
 .nav-container {
-    transition: 1s;
+    transition: .6s;
     left: 0;
     position: fixed; //for legacy browser support (looking at you IE)
     //position: sticky;
@@ -80,9 +80,6 @@ a:hover {
 }
 .nav-container.open {
     width: calc($xl-break/4.5);
-    .sidebar-hamburger span {
-        background: $box-shadow;
-    }
     .sidebar-logo {
         display: block;
     }

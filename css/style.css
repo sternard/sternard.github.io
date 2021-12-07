@@ -77,7 +77,7 @@ a:hover {
 }
 
 .nav-container {
-  transition: 1s;
+  transition: 0.6s;
   left: 0;
   position: fixed;
   background-color: #ededed;
@@ -100,9 +100,6 @@ a:hover {
 
 .nav-container.open {
   width: 266.6666666667px;
-}
-.nav-container.open .sidebar-hamburger span {
-  background: grey;
 }
 .nav-container.open .sidebar-logo {
   display: block;
@@ -172,7 +169,8 @@ a:hover {
 .sidebar-hamburger {
   width: 60px;
   height: 45px;
-  position: relative;
+  position: fixed;
+  right: 0;
   margin: 30px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -190,7 +188,7 @@ a:hover {
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #cd925a;
+  background: #e2ad7b;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -359,7 +357,7 @@ nav li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: #5a95cd;
+  background-color: #7bb0e2;
   gap: 12px;
   padding: 12px;
 }
@@ -416,9 +414,9 @@ nav li {
 }
 @media (min-width: 768px) {
   .projects-container div .netmatters-example:hover {
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     transform: scale(1.1);
-    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.6);
     background: url("../images/netmatters.png");
     background-size: cover;
   }
@@ -449,9 +447,9 @@ nav li {
 }
 @media (min-width: 768px) {
   .projects-container div .togglemenu-example:hover {
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     transform: scale(1.1);
-    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.6);
     background: url("../images/togglemenu.png");
     background-size: cover;
   }
@@ -502,7 +500,7 @@ nav li {
 .contact-container div {
   padding: 12px;
   background-color: #fff;
-  border: 12px solid #5a95cd;
+  border: 12px solid #7bb0e2;
   margin-bottom: auto;
   box-shadow: 0 0 10px grey;
 }
@@ -542,11 +540,11 @@ nav li {
   background: #ededed;
 }
 .contact-container input:hover, .contact-container textarea:hover {
-  box-shadow: 0 0 5px #5BC0DE;
+  box-shadow: 0 0 5px #90bde7;
 }
 .contact-container input:focus, .contact-container textarea:focus {
-  border: 1px solid #5a95cd;
-  box-shadow: 0 0 5px #5a95cd;
+  border: 1px solid #7bb0e2;
+  box-shadow: 0 0 5px #7bb0e2;
 }
 .contact-container #phone-number::placeholder, .contact-container #email-subject::placeholder {
   color: silver;
@@ -571,11 +569,11 @@ nav li {
   color: #4b4b4b;
 }
 .contact-container button:hover {
-  box-shadow: 0 0 5px #5BC0DE;
+  box-shadow: 0 0 5px #90bde7;
 }
 .contact-container button:focus {
-  box-shadow: 0 0 5px #5a95cd;
-  border: 1px solid #5a95cd;
+  box-shadow: 0 0 5px #7bb0e2;
+  border: 1px solid #7bb0e2;
 }
 .contact-container a {
   color: #000;
@@ -587,7 +585,7 @@ nav li {
 .about-container div {
   padding: 12px;
   background-color: #fff;
-  border: 12px solid #5a95cd;
+  border: 12px solid #7bb0e2;
   box-shadow: 0 0 10px grey;
   width: 100%;
 }
@@ -612,7 +610,7 @@ nav li {
 .half-container div {
   padding: 12px;
   background-color: #fff;
-  border: 12px solid #5a95cd;
+  border: 12px solid #7bb0e2;
   box-shadow: 0 0 10px grey;
   width: 100%;
   margin-bottom: 12px;
