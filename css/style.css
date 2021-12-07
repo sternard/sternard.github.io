@@ -390,17 +390,6 @@ nav li {
     background-image: url("https://placeimg.com/640/480/tech");
   }
 }
-.projects-container div:hover .child {
-  transition: 0.5s ease-in-out;
-  transform: blur(1.2);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://placeimg.com/640/480/tech");
-  background-size: cover;
-  background-position: center;
-}
-.projects-container div:hover .child span {
-  display: inline;
-  color: #fff;
-}
 .projects-container div .netmatters-example {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
   background-size: cover;
@@ -419,16 +408,20 @@ nav li {
   margin-bottom: 8px;
 }
 .projects-container div .netmatters-example:hover {
-  transition: 0.5s ease-in-out;
-  transform: scale(1.1);
-  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.6);
-  background: url("../images/netmatters.png");
-  background-size: cover;
   cursor: alias;
 }
 .projects-container div .netmatters-example:hover span {
   display: inline;
   color: #fff;
+}
+@media (min-width: 768px) {
+  .projects-container div .netmatters-example:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.6);
+    background: url("../images/netmatters.png");
+    background-size: cover;
+  }
 }
 .projects-container div .togglemenu-example {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
@@ -448,16 +441,20 @@ nav li {
   margin-bottom: 8px;
 }
 .projects-container div .togglemenu-example:hover {
-  transition: 0.5s ease-in-out;
-  transform: scale(1.1);
-  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.6);
-  background: url("../images/togglemenu.png");
-  background-size: cover;
   cursor: alias;
 }
 .projects-container div .togglemenu-example:hover span {
   display: inline;
   color: #fff;
+}
+@media (min-width: 768px) {
+  .projects-container div .togglemenu-example:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.6);
+    background: url("../images/togglemenu.png");
+    background-size: cover;
+  }
 }
 .projects-container div span {
   display: inline;
@@ -472,12 +469,12 @@ nav li {
   color: white;
 }
 .projects-container div button {
-  padding: 10px;
+  padding: 10px 20px;
   margin: 10px;
   font-family: "Courier Prime", monospace;
   font-size: 1.2em;
   cursor: pointer;
-  width: 100%;
+  color: black;
 }
 @media (min-width: 576px) {
   .projects-container div {

@@ -63,20 +63,6 @@
             background-size: cover;
             background-position: center;
         }
-        &:hover { //only affects placeholder, can all be removed when placeholders are replaced
-            .child {
-                transition: .5s ease-in-out;
-                transform: blur(1.2);
-                background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://placeimg.com/640/480/tech');
-                background-size: cover;
-                background-position: center;
-                span {
-                    display: inline;
-                    color: $white;
-                }
-            }
-            //remove all above ^
-        }
 
         //cards on Portfolio
         @include portfolio-card('netmatters');
@@ -95,12 +81,12 @@
             color: white;
         }
         button {
-            padding: 10px;
+            padding: 10px 20px;
             margin: 10px;
             font-family: 'Courier Prime', monospace;
             font-size: 1.2em;
             cursor: pointer;
-            width: 100%;
+            color: black;
         }
         @media (min-width: $small-break) {
             flex: 1;
