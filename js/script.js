@@ -1,6 +1,3 @@
-$("#card").flip();
-$("#card2").flip();
-
 $('.child').click((event) => { //close menu when tap outside of it
   event.preventDefault(); //stop from opening links etc    
 });

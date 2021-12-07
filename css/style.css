@@ -420,10 +420,11 @@ nav li {
 }
 .projects-container div .netmatters-example:hover {
   transition: 0.5s ease-in-out;
-  transform: scale(1.05);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
+  transform: scale(1.1);
+  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.6);
+  background: url("../images/netmatters.png");
   background-size: cover;
-  cursor: pointer;
+  cursor: alias;
 }
 .projects-container div .netmatters-example:hover span {
   display: inline;
@@ -448,10 +449,11 @@ nav li {
 }
 .projects-container div .togglemenu-example:hover {
   transition: 0.5s ease-in-out;
-  transform: scale(1.05);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
+  transform: scale(1.1);
+  box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.6);
+  background: url("../images/togglemenu.png");
   background-size: cover;
-  cursor: pointer;
+  cursor: alias;
 }
 .projects-container div .togglemenu-example:hover span {
   display: inline;
@@ -468,6 +470,14 @@ nav li {
 }
 .projects-container div a, .projects-container div a:visited {
   color: white;
+}
+.projects-container div button {
+  padding: 10px;
+  margin: 10px;
+  font-family: "Courier Prime", monospace;
+  font-size: 1.2em;
+  cursor: pointer;
+  width: 100%;
 }
 @media (min-width: 576px) {
   .projects-container div {
