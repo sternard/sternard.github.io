@@ -3,7 +3,7 @@
     height: 45px;
     position: fixed;
     right: 0;
-    margin: 30px;
+    margin: 15px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -13,6 +13,9 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+    @media (min-width: $small-break) {
+        margin: 30px;
+    }
 }
 
 .sidebar-hamburger span {

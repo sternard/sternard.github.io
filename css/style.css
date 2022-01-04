@@ -24,11 +24,6 @@ h1 {
   font-size: 5em;
 }
 
-.coding-font {
-  font-family: "Courier Prime", monospace;
-  font-size: 2.5em;
-}
-
 h2 {
   font-size: 1.8em;
   padding: 20px 0;
@@ -61,7 +56,7 @@ p {
 a {
   text-decoration: underline;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   a {
     text-decoration: none;
   }
@@ -70,7 +65,7 @@ a {
 a:hover {
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   a:hover {
     text-decoration: underline;
   }
@@ -87,7 +82,7 @@ a:hover {
   z-index: 10;
   word-break: keep-all;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .nav-container {
     width: 195.8px;
   }
@@ -118,8 +113,9 @@ a:hover {
   background-color: #fff;
   width: 100vw;
   padding-bottom: 76px;
+  min-height: 100vh;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .content-container {
     width: calc(100vw - 195.8px);
     margin-left: 195.8px;
@@ -144,15 +140,12 @@ a:hover {
   transition: 0.3s ease-in-out;
   transform: scale(1.5);
 }
-.scroll-div a, .scroll-div a:visited {
-  color: grey;
-}
-.scroll-div a:hover {
+.scroll-div a, .scroll-div a:visited, .scroll-div a:hover {
   color: #000;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .scroll-div {
-    left: calc((100vw - 153.6px) / 2 - 20px);
+    left: calc((100vw - 154px) / 2 - 20px);
   }
 }
 @media (min-width: 979px) {
@@ -166,12 +159,19 @@ a:hover {
   }
 }
 
+.blue-background {
+  background-color: #7bb0e2;
+}
+.blue-background .scroll-div a, .blue-background .scroll-div a:visited, .blue-background .scroll-div a:hover {
+  color: #fff;
+}
+
 .sidebar-hamburger {
   width: 60px;
   height: 45px;
   position: fixed;
   right: 0;
-  margin: 30px;
+  margin: 15px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -181,6 +181,11 @@ a:hover {
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
+}
+@media (min-width: 576px) {
+  .sidebar-hamburger {
+    margin: 30px;
+  }
 }
 
 .sidebar-hamburger span {
@@ -305,7 +310,7 @@ nav li {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .sidebar-hamburger {
     display: none;
   }
@@ -351,9 +356,32 @@ nav li {
   background-position: center;
   height: 25vh;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  padding-left: 24px;
   color: #fff;
+}
+@media (min-width: 770px) {
+  .small-hero-image {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.small-hero-image h1 {
+  font-size: 3em;
+}
+@media (min-width: 576px) {
+  .small-hero-image h1 {
+    font-size: 5em;
+  }
+}
+.small-hero-image .coding-font {
+  font-family: "Courier Prime", monospace;
+  font-size: 1.5rem;
+}
+@media (min-width: 576px) {
+  .small-hero-image .coding-font {
+    font-size: 2.5em;
+  }
 }
 
 .projects-container {
@@ -386,7 +414,7 @@ nav li {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .projects-container div .child {
     background-image: url("https://placeimg.com/640/480/tech");
   }
@@ -396,7 +424,7 @@ nav li {
   background-size: cover;
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .projects-container div .netmatters-example {
     background-image: url("../images/netmatters.png");
   }
@@ -415,7 +443,7 @@ nav li {
   display: inline;
   color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .projects-container div .netmatters-example:hover {
     transition: 0.8s ease-in-out;
     transform: scale(1.1);
@@ -429,7 +457,7 @@ nav li {
   background-size: cover;
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .projects-container div .togglemenu-example {
     background-image: url("../images/togglemenu.png");
   }
@@ -448,7 +476,7 @@ nav li {
   display: inline;
   color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .projects-container div .togglemenu-example:hover {
     transition: 0.8s ease-in-out;
     transform: scale(1.1);
@@ -461,7 +489,7 @@ nav li {
   display: inline;
   color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .projects-container div span {
     display: none;
   }
