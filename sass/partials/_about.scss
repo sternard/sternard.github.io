@@ -27,9 +27,26 @@
     background-position: center;
     height: 25vh;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    padding-left: calc($gap-size*2);
     color: $white;
+    @media (min-width: $medium-break) {
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 3em;
+        @media (min-width: $small-break) {
+            font-size: 5em;
+        }
+    }
+    .coding-font {
+        font-family: 'Courier Prime', monospace;
+        font-size: 1.5rem;
+        @media (min-width: $small-break) {
+            font-size: 2.5em;
+        }
+    }
 }
 .projects-container {
     display: flex;
