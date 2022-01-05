@@ -170,11 +170,11 @@ a:hover {
 }
 
 .sidebar-hamburger {
-  width: 60px;
-  height: 45px;
+  width: 40px;
+  height: 30px;
   position: fixed;
   right: 0;
-  margin: 15px;
+  margin: 18px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -187,6 +187,8 @@ a:hover {
 }
 @media (min-width: 576px) {
   .sidebar-hamburger {
+    width: 60px;
+    height: 45px;
     margin: 30px;
   }
 }
@@ -194,9 +196,9 @@ a:hover {
 .sidebar-hamburger span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 6px;
   width: 100%;
-  background: #e2ad7b;
+  background: #2871b6;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -209,23 +211,43 @@ a:hover {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
+@media (min-width: 576px) {
+  .sidebar-hamburger span {
+    height: 9px;
+  }
+}
 
 .sidebar-hamburger span:nth-child(1) {
   top: 0px;
 }
 
 .sidebar-hamburger span:nth-child(2), .sidebar-hamburger span:nth-child(3) {
-  top: 18px;
+  top: 12px;
+}
+@media (min-width: 576px) {
+  .sidebar-hamburger span:nth-child(2), .sidebar-hamburger span:nth-child(3) {
+    top: 18px;
+  }
 }
 
 .sidebar-hamburger span:nth-child(4) {
-  top: 36px;
+  top: 24px;
+}
+@media (min-width: 576px) {
+  .sidebar-hamburger span:nth-child(4) {
+    top: 36px;
+  }
 }
 
 .sidebar-hamburger.open span:nth-child(1) {
-  top: 18px;
+  top: 12px;
   width: 0%;
   left: 50%;
+}
+@media (min-width: 576px) {
+  .sidebar-hamburger.open span:nth-child(1) {
+    top: 18px;
+  }
 }
 
 .sidebar-hamburger.open span:nth-child(2) {
@@ -243,9 +265,14 @@ a:hover {
 }
 
 .sidebar-hamburger.open span:nth-child(4) {
-  top: 18px;
+  top: 12px;
   width: 0%;
   left: 50%;
+}
+@media (min-width: 576px) {
+  .sidebar-hamburger.open span:nth-child(4) {
+    top: 18px;
+  }
 }
 
 .sidebar-logo {
