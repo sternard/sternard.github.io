@@ -247,7 +247,34 @@
     @media (min-width: $medium-break) {
         display: none;
     }
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    span {
+        width: 33%;
+        font-size: 3rem;
+    }
+    i {
+        margin: 20px;
+    }
+    .fa-phone {
+        color: green;
+        &:hover {
+            color: darken(green, 5%);
+        }
+    }
+    .fa-at {
+        color: darken(orangered, 5%);
+        &:hover {
+            color: darken(orangered, 10%);
+        }
+    }
+    .fa-map-marked-alt {
+        color: slateblue;
+        &:hover {
+            color: darken(slateblue, 10%);
+        }
+    }
 }
 
 .half-container {

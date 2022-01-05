@@ -648,12 +648,39 @@ nav li {
 }
 
 .mobile-only-container {
+  display: flex;
+  flex-direction: row;
   text-align: center;
 }
 @media (min-width: 770px) {
   .mobile-only-container {
     display: none;
   }
+}
+.mobile-only-container span {
+  width: 33%;
+  font-size: 3rem;
+}
+.mobile-only-container i {
+  margin: 20px;
+}
+.mobile-only-container .fa-phone {
+  color: green;
+}
+.mobile-only-container .fa-phone:hover {
+  color: #006700;
+}
+.mobile-only-container .fa-at {
+  color: #e63e00;
+}
+.mobile-only-container .fa-at:hover {
+  color: #cc3700;
+}
+.mobile-only-container .fa-map-marked-alt {
+  color: slateblue;
+}
+.mobile-only-container .fa-map-marked-alt:hover {
+  color: #4b39bb;
 }
 
 .half-container {
