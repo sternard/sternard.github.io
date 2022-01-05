@@ -30,12 +30,15 @@
     align-items: left;
     padding-left: calc($gap-size*2);
     color: $white;
-    @media (min-width: $medium-break) {
+    @media (min-width: $small-break) {
         justify-content: center;
         align-items: center;
     }
     h1 {
         font-size: 3em;
+        @media (min-width: $mobile-break) {
+            font-size: 4em;
+        }
         @media (min-width: $small-break) {
             font-size: 5em;
         }
@@ -139,7 +142,7 @@
             display: none;
             width: 35%;
         }
-        @media (min-width: $large-break) {
+        @media (min-width: $medium-break) {
             &:first-child {
                 width: 65%;
             }
@@ -211,7 +214,7 @@
     }
 }
 
-.about-container {
+.about-container, .mobile-only-container {
     padding: $gap-size $gap-size 0 $gap-size;
     div {
         padding: $gap-size;
@@ -226,6 +229,25 @@
     a:hover {
         color: $black;
     }
+    img {
+        border-radius: 100%;
+        width: 20%;
+        min-width: 100px;
+        max-width: 150px;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    p {
+        text-align: wrap;
+    }
+}
+
+.mobile-only-container {
+    @media (min-width: $medium-break) {
+        display: none;
+    }
+    text-align: center;
 }
 
 .half-container {
@@ -259,5 +281,9 @@
     }
     li {
         padding: 0 0 8px;
+    }
+    img {
+        width: 100%;
+        max-width: 400px;
     }
 }

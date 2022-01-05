@@ -117,8 +117,11 @@ a:hover {
         transition: .3s ease-in-out;
         transform: scale(1.5);
     }
-    a, a:visited, a:hover {
-        color: $black;
+    a, a:visited {
+        color: $box-shadow;
+    }
+    a:hover {
+        color: $form-colour;
     }
     left: calc((100vw/2) - 20px);
     @media (min-width: $medium-break) {
