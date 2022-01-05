@@ -148,8 +148,10 @@ nav {
     }
     justify-content: space-evenly;
     position: absolute;
-    bottom: 0;
     width: 100%;
+    @media (min-width: $medium-break) {
+        bottom: 0;
+    }
 }
 
 @media (min-width: $medium-break) {

@@ -319,7 +319,6 @@ nav li {
   text-align: center;
   justify-content: space-evenly;
   position: absolute;
-  bottom: 0;
   width: 100%;
 }
 .sidebar-socials a {
@@ -337,6 +336,11 @@ nav li {
 @media (-ms-high-contrast: none) and (min-width: 1200px), (-ms-high-contrast: active) and (min-width: 1200px) {
   .sidebar-socials span {
     padding: 0 33px;
+  }
+}
+@media (min-width: 770px) {
+  .sidebar-socials {
+    bottom: 0;
   }
 }
 
