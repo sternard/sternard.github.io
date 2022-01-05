@@ -1,29 +1,35 @@
 //Mobile menu
 let $menuOpen = false;
-let $mobileWidth = window.matchMedia( "(min-width: 768px)" );
+let $mobileWidth = window.matchMedia( "(min-width: 770px)" ); //MUST match $medium-break in sass
 
 const $toggleMenu = function(){
-    $('.sidebar-hamburger').toggleClass('open');
-    $('.nav-container').toggleClass('open');
-    if ($menuOpen === false)
-        { $menuOpen = true; } else { $menuOpen = false; }
+  $('.sidebar-hamburger').toggleClass('open'); //change hamburger to X
+  $('.nav-container').toggleClass('open'); //change menu state
+  if ($menuOpen === false){ 
+    $menuOpen = true;
+  }else{ 
+    $menuOpen = false; //keep track of state
+  }
 }
 
+//call toggleMenu function on hamburger tap
 $(document).ready(function(){
-	$('.sidebar-hamburger').click($toggleMenu);
+  $('.sidebar-hamburger').click($toggleMenu);
 });
 
+//close toggleMenu if not in mobile view
 $mobileWidth.addEventListener("change", () => {
   if ($mobileWidth.matches && $menuOpen) {
     $toggleMenu();
   }
 });
 
-$(document).click((event) => { //close menu when tap outside of it
-    if (!$(event.target).closest('.nav-container').length && $menuOpen) { //check if menu is open
-      event.preventDefault(); //stop from opening links etc
-      $toggleMenu(); //close menu
-    }        
+//close menu when tapping outside of it
+$(document).click((event) => { 
+  if (!$(event.target).closest('.nav-container').length && $menuOpen) { //check if tap is outside of menu
+    event.preventDefault(); //stop from opening links or interacting with page which is currently dimmed
+    $toggleMenu(); //close menu
+  }        
 });
 
 
@@ -50,7 +56,7 @@ $('.newsletter-signup').submit(function( event ) {
   let $emailSubject = $('#email-subject').val();
   let $emailMessage = $('#email-message').val();
 
-  let $failure = 0;
+  let $failure = 0; //if program counts any failures it knows not to send email at end of process
 
   if ($emailName === "" || !isLetters($emailName)) {
     $("label[for='email-name']").html('<span class="required">*Please provide a <strong>contact name</strong>:</span><br>');
@@ -81,7 +87,7 @@ $('.newsletter-signup').submit(function( event ) {
   }
 
   if ($failure > 0) {
-    $failure = 0; //if any of the fields were incorrect on submit, stop from sending and reset counter
+    $failure = 0; //if any input fails validation, stop from sending email and reset counter
   }else{
     alert(`Thanks, your email has been submitted.
 
@@ -90,7 +96,6 @@ Email address: ${$emailAddress}
 Number: ${$emailNumber}
 Subject: ${$emailSubject}
 Message: ${$emailMessage}`);
-
 
     //clear fields
     $('.newsletter-signup')[0].reset();
