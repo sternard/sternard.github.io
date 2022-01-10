@@ -525,6 +525,39 @@ nav li {
     background-size: cover;
   }
 }
+.projects-container div .database-example {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/database.png");
+  background-size: cover;
+  text-decoration: none;
+}
+@media (min-width: 770px) {
+  .projects-container div .database-example {
+    background-image: url("../images/database.png");
+  }
+}
+.projects-container div .database-example div {
+  padding: 0 15%;
+}
+.projects-container div .database-example div strong {
+  display: block;
+  margin-bottom: 8px;
+}
+.projects-container div .database-example:hover {
+  cursor: alias;
+}
+.projects-container div .database-example:hover span {
+  display: inline;
+  color: #fff;
+}
+@media (min-width: 770px) {
+  .projects-container div .database-example:hover {
+    transition: 0.8s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.6);
+    background: url("../images/database.png");
+    background-size: cover;
+  }
+}
 .projects-container div span {
   display: inline;
   color: #fff;
