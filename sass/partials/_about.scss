@@ -120,6 +120,50 @@
         }
     }
 }
+.examples-container {
+    .database-table-structure-image {
+        // background-image: url('../images/database.png');
+        // background-size: contain;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        text-align: center;
+        padding: $gap-size;
+        padding-bottom: 0px;
+        img {
+            width: 100%;
+        }
+    }
+    div {
+        flex-basis: 100%;
+        flex-grow: 100%;
+    }
+}
+// .examples-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//     background-color: $background;
+//     gap: $gap-size;
+//     padding: $gap-size;
+//     div {
+//         display: flex;
+//         flex-wrap: wrap;
+//         flex-direction: column;
+//         flex-basis: 100%;
+//         flex-grow: 100%;
+//         height: 240px;
+//         .image {
+//             width: 50%;
+//             background-image: url("../images/togglemenu.png");
+//             background-size: cover;
+//             background-position: center;
+//         }
+//         .text {
+//             width: 50%;
+//             text-align: center;
+//         }
+//     }  
+// }
 .contact-container {
     display: flex;
     gap: $gap-size;

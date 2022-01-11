@@ -25,7 +25,8 @@
     position: absolute;
     height: 6px;
     width: 100%;
-    background: darken($background, 25%);
+    //background: darken($background, 25%);
+    background: complement($background);
     border-radius: 9px;
     opacity: 1;
     left: 0;

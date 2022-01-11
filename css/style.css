@@ -199,7 +199,7 @@ a:hover {
   position: absolute;
   height: 6px;
   width: 100%;
-  background: #2871b6;
+  background: #e2ad7b;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -588,6 +588,19 @@ nav li {
     flex-basis: 100%;
     flex-grow: 100%;
   }
+}
+
+.examples-container .database-table-structure-image {
+  text-align: center;
+  padding: 12px;
+  padding-bottom: 0px;
+}
+.examples-container .database-table-structure-image img {
+  width: 100%;
+}
+.examples-container div {
+  flex-basis: 100%;
+  flex-grow: 100%;
 }
 
 .contact-container {
