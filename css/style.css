@@ -463,6 +463,7 @@ nav li {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/netmatters.png");
   background-size: cover;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 770px) {
   .projects-container div .netmatters-example {
@@ -485,7 +486,6 @@ nav li {
 }
 @media (min-width: 770px) {
   .projects-container div .netmatters-example:hover {
-    transition: 0.8s ease-in-out;
     transform: scale(1.1);
     box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.6);
     background: url("../images/netmatters.png");
@@ -496,6 +496,7 @@ nav li {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
   background-size: cover;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 770px) {
   .projects-container div .togglemenu-example {
@@ -518,7 +519,6 @@ nav li {
 }
 @media (min-width: 770px) {
   .projects-container div .togglemenu-example:hover {
-    transition: 0.8s ease-in-out;
     transform: scale(1.1);
     box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.6);
     background: url("../images/togglemenu.png");
@@ -529,6 +529,7 @@ nav li {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/database.png");
   background-size: cover;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 @media (min-width: 770px) {
   .projects-container div .database-example {
@@ -551,7 +552,6 @@ nav li {
 }
 @media (min-width: 770px) {
   .projects-container div .database-example:hover {
-    transition: 0.8s ease-in-out;
     transform: scale(1.1);
     box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.6);
     background: url("../images/database.png");
@@ -598,9 +598,8 @@ nav li {
 .examples-container .database-table-structure-image img {
   width: 100%;
 }
-.examples-container div {
-  flex-basis: 100%;
-  flex-grow: 100%;
+.examples-container ul {
+  margin-left: 20px;
 }
 
 .contact-container {
@@ -801,6 +800,26 @@ nav li {
 .half-container img {
   width: 100%;
   max-width: 400px;
+}
+.half-container .coding-font {
+  font-family: "Courier Prime", monospace;
+}
+.half-container .comment-note {
+  font-size: 0.8em;
+  color: #4b4b4b;
+}
+.half-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.half-container th, .half-container td {
+  width: 50%;
+  padding: 5px;
+  text-align: left;
+  border: 1px solid #CCCCCC;
+}
+.half-container tr:nth-child(odd) {
+  background-color: #ededed;
 }
 
 /*# sourceMappingURL=style.css.map */

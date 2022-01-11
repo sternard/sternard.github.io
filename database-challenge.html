@@ -45,35 +45,91 @@
         </div>
         <div class="about-container">
             <div>
-                <h6>kjvkjhvkjv</h6>
-                <p>The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>
-                <a href="https://www.netmatters.co.uk/scions-coalition-scheme" target="_blank">More information regarding SCS can be found here.</a>
+                <h6>Database Challenge</h6>
+                <p>I was tasked with creating a query that:</p>
+                <ul>
+                    <li>Includes a subquery</li>
+                    <li>Features formatted outputs</li>
+                    <li>Sorts output by a value</li>
+                </ul>
+                <p>Below is the table structure I used to perform the challenge with. It documents teams, players, matches, results and other details of the EURO 2016 football championships.</p>
+                <p>I have written a query with the objective of returning every player who was disciplined with a booking during the tournament, sorted by number of times they were booked. A subquery then filters only the players who played for a specific team - in my case, Portugal.</p>
+                <p>Scroll to the bottom of the page or <a href="#sql">click here to view the SQL code and the outcome of the query</a>.</p>
             </div>
         </div>
         <div class="database-table-structure-image">
-            <img src="images/database.png">
+            <a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php" target="_blank"><img src="images/database.png"></a>
         </div>
-        <div class="half-container">
+        <div class="half-container" id="sql">
             <div>
-                <img src="images/nm-logo.png">
-                <h6>About Netmatters</h6>
-                <ul>
-                    <li>Established in 2008</li>
-                    <li>Norfolk's leading technology company</li>
-                    <li>Winner of the Princess Royal Training Award</li>
-                    <li>Winner of EDP Skills of Tomorrow Award</li>
-                    <li>80+ staff, 2 locations across Norfolk</li>
-                    <li>Digital Marketing, Website & Software development & IT Support</li>
-                    <li>Broad spectrum of clients, working nationwide</li>
-                    <li>Operate to strict company values</li>
-                </ul>
+                <h6>SQL Query</h6>
+                <p class="coding-font">
+                    SELECT a.player_name AS "Player", COUNT(b.player_id) AS "Bookings"<br>
+                    FROM player_mast a, player_booked b<br><br>
+                    
+                    WHERE a.player_id = b.player_id<br>
+                    AND a.team_id =<br>
+                    (SELECT country_id<br>
+                    FROM soccer_country<br>
+                    WHERE country_name = 'Portugal')<br><br>
+                    
+                    GROUP BY a.player_name<br>
+                    ORDER BY "Bookings" DESC
+                </p>
+                <p class="comment-note"><i>//note that country_name <b>Portugal</b> in the subquery can be changed to the name of any country that participated to show which of their players got booked during the tournament</i></p>
             </div>
             <div>
-                <img src="images/treehouse.png">
-                <h6>Treehouse</h6>
-                Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.
-                <p>Total Score:</p>
-                <a href="https://teamtreehouse.com/stephenbernard2" target="_blank">teamtreehouse.com/stephenbernard2</a>
+                <h6>Result</h6>
+                <table>
+                    <tr>
+                        <th>Player</th>
+                        <th>Bookings</th>
+                    </tr>
+                    <tr>
+                        <td>William Carvalho</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Bruno Alves</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Cedric</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Cristiano Ronaldo</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Joao Mario</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Adrien Silva</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Pepe</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Raphael Guerreiro</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Ricardo Quaresma</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Rui Patricio</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Jose Fonte</td>
+                        <td>1</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="scroll-div">

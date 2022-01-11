@@ -122,10 +122,6 @@
 }
 .examples-container {
     .database-table-structure-image {
-        // background-image: url('../images/database.png');
-        // background-size: contain;
-        // background-position: center;
-        // background-repeat: no-repeat;
         text-align: center;
         padding: $gap-size;
         padding-bottom: 0px;
@@ -133,9 +129,8 @@
             width: 100%;
         }
     }
-    div {
-        flex-basis: 100%;
-        flex-grow: 100%;
+    ul {
+        margin-left: 20px;
     }
 }
 // .examples-container {
@@ -357,5 +352,25 @@
     img {
         width: 100%;
         max-width: 400px;
+    }
+    .coding-font {
+        font-family: 'Courier Prime', monospace;
+    }
+    .comment-note {
+        font-size: 0.8em;
+        color: $form-colour;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        width: 50%;
+        padding: 5px;
+        text-align: left;
+        border: 1px solid $form-border;
+    }
+    tr:nth-child(odd) {
+        background-color: $form-background;
     }
 }
