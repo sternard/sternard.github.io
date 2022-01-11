@@ -495,6 +495,42 @@ nav li {
     background-size: cover;
   }
 }
+.projects-container div .arrays-example {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/arrays.png");
+  background-size: cover;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+@media (min-width: 770px) {
+  .projects-container div .arrays-example {
+    background-image: url("../images/arrays.png");
+  }
+}
+.projects-container div .arrays-example div {
+  padding: 0 15%;
+}
+.projects-container div .arrays-example div strong {
+  display: block;
+  margin-bottom: 8px;
+}
+.projects-container div .arrays-example a {
+  text-decoration: none;
+}
+.projects-container div .arrays-example:hover {
+  cursor: alias;
+}
+.projects-container div .arrays-example:hover span {
+  display: inline;
+  color: #fff;
+}
+@media (min-width: 770px) {
+  .projects-container div .arrays-example:hover {
+    transform: scale(1.1);
+    box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.6);
+    background: url("../images/arrays.png");
+    background-size: cover;
+  }
+}
 .projects-container div .togglemenu-example {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
   background-size: cover;
@@ -591,8 +627,6 @@ nav li {
   .projects-container div {
     flex: 1;
   }
-}
-@media (min-width: 1200px) {
   .projects-container div:nth-child(3) {
     flex-basis: 100%;
     flex-grow: 100%;
