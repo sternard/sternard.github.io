@@ -477,6 +477,9 @@ nav li {
   display: block;
   margin-bottom: 8px;
 }
+.projects-container div .netmatters-example a {
+  text-decoration: none;
+}
 .projects-container div .netmatters-example:hover {
   cursor: alias;
 }
@@ -510,6 +513,9 @@ nav li {
   display: block;
   margin-bottom: 8px;
 }
+.projects-container div .togglemenu-example a {
+  text-decoration: none;
+}
 .projects-container div .togglemenu-example:hover {
   cursor: alias;
 }
@@ -542,6 +548,9 @@ nav li {
 .projects-container div .database-example div strong {
   display: block;
   margin-bottom: 8px;
+}
+.projects-container div .database-example a {
+  text-decoration: none;
 }
 .projects-container div .database-example:hover {
   cursor: alias;
@@ -820,6 +829,9 @@ nav li {
 }
 .half-container tr:nth-child(odd) {
   background-color: #ededed;
+}
+.half-container th {
+  background-color: #d9d9d9;
 }
 
 /*# sourceMappingURL=style.css.map */
