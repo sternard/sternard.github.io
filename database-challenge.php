@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephen Bernard | SCS Scheme</title>
-    <meta name="description" content="Web developer portfolio for Oxford UK based programming student Stephen Bernard">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <script src="https://kit.fontawesome.com/230fdafe42.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="nav-container">
-        <div class="sidebar-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="sidebar-logo">
-            <h1><a href="index.html">SB</a></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html#portfolio">My Portfolio</a></li>
-                <li><a href="examples.html">Coding Examples</a></li>
-                <li><a href="scs_scheme.html">SCS Scheme</a></li>
-                <li><a href="about.html#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-        <div class="sidebar-socials">
-            <div><span><a href="https://www.github.com/sternard" target="_blank"><i class="fab fa-github"></i></a></span></div>
-            <div><span><a href="https://www.teamtreehouse.com/stephenbernard2" target="_blank"><i class="fas fa-tree"></i></a></span></div>
-            <div><span><a href="https://www.linkedin.com/in/stephen-bernard-885293b2" target="_blank"><i class="fab fa-linkedin-in"></i></a></span></div>
-        </div>
-    </div>
+<?php include("header.php"); ?>
     <div class="content-container examples-container">
         <div class="small-hero-image">
             <h1 class="coding-font" id="typewriter">>exec "/database _challenge"</h1>
@@ -136,9 +96,4 @@
             <a href="#top"><i class="fas fa-angle-double-up"></i></a>
         </div>
     </div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/typewriter.js"></script>
-    <script src="js/dbchallengetyper.js"></script>
-    <script src="js/script.js"></script>
-</body>
-</html>
+<?php include("footer.php"); ?>
