@@ -715,6 +715,9 @@ nav li {
 .contact-container .required {
   color: tomato;
 }
+.contact-container .success-span {
+  font-weight: 800;
+}
 .contact-container button {
   padding: 15px 20px;
   font-family: "Lora", serif;
