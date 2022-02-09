@@ -64,6 +64,7 @@
     div {
         display: flex;
         color: $white;
+        border-radius: 5px;
         height: 240px;
         min-width: 240px;
         justify-content: center;
@@ -144,10 +145,10 @@
     }
     div {
         padding: $gap-size;
-        background-color: $white;
         border: $gap-size solid $background;
+        border-radius: 5px;
         margin-bottom: auto;
-        box-shadow: 0 0 10px $box-shadow;
+        box-shadow: 0 0 5px $box-shadow;
         &:first-child {
             width: 100%;
         }
@@ -203,6 +204,9 @@
     .required {
         color: $req-red;
     }
+    .success-span {
+        font-weight: 800;
+    }
     button {
         padding: 15px 20px;
         font-family: 'Lora', serif;
@@ -231,9 +235,9 @@
     padding: $gap-size $gap-size 0 $gap-size;
     div {
         padding: $gap-size;
-        background-color: $white;
         border: $gap-size solid $background;
-        box-shadow: 0 0 10px $box-shadow;
+        border-radius: 5px;
+        box-shadow: 0 0 5px $box-shadow;
         width: 100%;
     }
     a {
@@ -300,9 +304,9 @@
     gap: $gap-size;
     div {
         padding: $gap-size;
-        background-color: $white;
         border: $gap-size solid $background;
-        box-shadow: 0 0 10px $box-shadow;
+        border-radius: 5px;
+        box-shadow: 0 0 5px $box-shadow;
         width: 100%;
         margin-bottom: $gap-size;
         overflow-wrap: break-word;

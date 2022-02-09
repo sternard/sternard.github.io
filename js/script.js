@@ -36,7 +36,7 @@ $(document).click((event) => {
 
 //Contact form validation
 function isLetters(value) {
-  const regex = /^[a-zA-Z]+$/;
+  const regex = /^[a-zA-Z-' ]*$/;
   return regex.test(value);
 }
 function isEmail(value) {
@@ -48,8 +48,7 @@ function isPhone(value) {
   return regex.test(value);
 }
 
-$('.newsletter-signup').submit(function( event ) {
-  event.preventDefault();
+$('.contact-form').submit(function( event ) {
   let $emailName = $('#email-name').val();
   let $emailAddress = $('#email-address').val();
   let $emailNumber = $('#phone-number').val();
@@ -88,16 +87,9 @@ $('.newsletter-signup').submit(function( event ) {
 
   if ($failure > 0) {
     $failure = 0; //if any input fails validation, stop from sending email and reset counter
+    event.preventDefault();
   }else{
-    alert(`Thanks, your email has been submitted.
-
-Name: ${$emailName}
-Email address: ${$emailAddress}
-Number: ${$emailNumber}
-Subject: ${$emailSubject}
-Message: ${$emailMessage}`);
-
-    //clear fields
-    $('.newsletter-signup')[0].reset();
+    //client side validation is successful
+    //$('.contact-form')[0].reset();
   }
 });
