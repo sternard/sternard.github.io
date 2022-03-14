@@ -87,11 +87,13 @@
 
         //cards on Portfolio
         @include portfolio-card('netmatters');
+        @include portfolio-card('laravel');
         @include portfolio-card('arrays');
 
         //cards on Coding Examples
         @include portfolio-card('togglemenu');
         @include portfolio-card('database');
+        @include portfolio-card('crud');
 
         span {
             display: inline;

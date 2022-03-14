@@ -20,6 +20,14 @@
                     </div></a>
                 </div>
             </div>
+            <div class="parent">
+                <div class="child crud-example">
+                    <a href="https://github.com/sternard/laravel-reflection/blob/main/app/Http/Controllers/CompanyController.php" target="_blank"><div> 
+                        <span><strong>Laravel CRUD</strong>
+                        A Laravel controller which enables database interaction through Eloquent.</span>
+                    </div></a>
+                </div>
+            </div>
             <!-- <div class="parent">
                 <div class="child">
                     <span>Coding Example 3</span>

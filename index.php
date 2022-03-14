@@ -26,14 +26,17 @@
                 </div>
             </div>
             <div class="parent">
-                <div class="child togglemenu-example">
+                <div class="child laravel-example">
                     <div id="card2"> 
                         <div class="front"> 
-                            <span><strong>Example card</strong>
-                            This is what a card looks like.</span>
+                            <span><strong>Laravel Reflection</strong>
+                            A simple companies/employees project with CRUD functionality and user authentication.</span>
                         </div> 
                         <div class="back">
-                            <span>Links to GitHub and live demo on back</span>
+                            <span>
+                                <button onclick="window.open('https://stephen-bernard.netmatters-scs.co.uk/laravel/public/')"><i class="fas fa-external-link-alt"></i> Live Preview</button>
+                                <button onclick="window.open('https://github.com/sternard/laravel-reflection/')"><i class="fab fa-github"></i> Open in GitHub</button>
+                            </span>
                         </div> 
                     </div>
                 </div>
@@ -52,16 +55,6 @@
                             </span>
                         </div> 
                     </div>
-                </div>
-            </div>
-            <div class="parent">
-                <div class="child">
-                    <span>Project 4<br><br><a href="#"><b>View Project</b></a> <i class="fas fa-arrow-right"></i></span>
-                </div>
-            </div>
-            <div class="parent">
-                <div class="child">
-                    <span>Project 5<br><br><a href="#"><b>View Project</b></a> <i class="fas fa-arrow-right"></i></span>
                 </div>
             </div>
         </div>
