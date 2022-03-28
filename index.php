@@ -57,6 +57,22 @@
                     </div>
                 </div>
             </div>
+            <div class="parent">
+                <div class="child vue-example">
+                    <div id="card4"> 
+                        <div class="front"> 
+                            <span><strong>Vue Reflection</strong>
+                                A simple eCommerce front end using the Vue framework and TailwindCSS for UI elements.</span>
+                        </div> 
+                        <div class="back">
+                            <span>
+                                <button onclick="window.open('https://vue.stephen-bernard.netmatters-scs.co.uk/')"><i class="fas fa-external-link-alt"></i> Live Preview</button>
+                                <button onclick="window.open('https://github.com/sternard/vue3-reflection')"><i class="fab fa-github"></i> Open in GitHub</button>
+                            </span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="scroll-div">
             <a href="#top"><i class="fas fa-angle-double-up"></i></a>

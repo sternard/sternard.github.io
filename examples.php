@@ -24,7 +24,7 @@
                 <div class="child crud-example">
                     <a href="https://github.com/sternard/laravel-reflection/blob/main/app/Http/Controllers/CompanyController.php" target="_blank"><div> 
                         <span><strong>Laravel CRUD</strong>
-                        A Laravel controller which enables database interaction through Eloquent.</span>
+                        A Laravel controller which enables database interaction through Eloquent, with input validation.</span>
                     </div></a>
                 </div>
             </div>

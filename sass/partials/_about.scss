@@ -89,6 +89,7 @@
         @include portfolio-card('netmatters');
         @include portfolio-card('laravel');
         @include portfolio-card('arrays');
+        @include portfolio-card('vue');
 
         //cards on Coding Examples
         @include portfolio-card('togglemenu');

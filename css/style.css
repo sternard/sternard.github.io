@@ -568,6 +568,42 @@ nav li {
     background-size: cover;
   }
 }
+.projects-container div .vue-example {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/vue.png");
+  background-size: cover;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+@media (min-width: 770px) {
+  .projects-container div .vue-example {
+    background-image: url("../images/vue.png");
+  }
+}
+.projects-container div .vue-example div {
+  padding: 0 15%;
+}
+.projects-container div .vue-example div strong {
+  display: block;
+  margin-bottom: 8px;
+}
+.projects-container div .vue-example a {
+  text-decoration: none;
+}
+.projects-container div .vue-example:hover {
+  cursor: alias;
+}
+.projects-container div .vue-example:hover span {
+  display: inline;
+  color: #fff;
+}
+@media (min-width: 770px) {
+  .projects-container div .vue-example:hover {
+    transform: scale(1.1);
+    box-shadow: inset 0 0 0 800px rgba(0, 0, 0, 0.6);
+    background: url("../images/vue.png");
+    background-size: cover;
+  }
+}
 .projects-container div .togglemenu-example {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/togglemenu.png");
   background-size: cover;
