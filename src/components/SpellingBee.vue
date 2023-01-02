@@ -1,6 +1,6 @@
 <template>
 <div>
-    <input class="spelling" type="text" v-model="input" @keydown="validateInput($event, input)" />
+    <input class="spelling" autocomplete="off" type="text" caption="Enter a word..." ref="input" v-model="input" @keydown="validateInput($event, input)" />
 </div>
 <div class="container">
     <div class="block" v-for="i in letters">{{ i }}</div>
@@ -17,7 +17,7 @@ import axios from 'axios'
 export default {
     data() {
         return {
-            message: "Find words:",
+            message: "",
             letters: "",
             regex: "",
             input: "",
@@ -74,6 +74,7 @@ export default {
     },
     mounted() {
         this.generatePangram()
+        this.$refs?.[`input`].focus()
     }
 }
 </script>
