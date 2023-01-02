@@ -1,11 +1,11 @@
 <template>
+<div>
+    <input class="spelling" type="text" v-model="input" @keydown="validateInput($event, input)" />
+</div>
 <div class="container">
     <div class="block" v-for="i in letters">{{ i }}</div>
 </div>
 <div><h1>{{ message }}</h1></div>
-<div>
-    <input class="spelling" type="text" v-model="input" @keydown="validateInput($event, input)" />
-</div>
 <div class="wordlist">
     <li v-for="word in found">{{ word }}</li>
 </div>
