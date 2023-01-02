@@ -122,7 +122,7 @@ div {
 }
 
 .spelling {
-    width: 400px;
+    width: 350px;
     height: 50px;
     margin: 5px;
     text-align: center;
