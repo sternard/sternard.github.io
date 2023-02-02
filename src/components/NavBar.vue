@@ -4,9 +4,8 @@ import { RouterLink } from 'vue-router'
 
 <template>
     <div class="footer">
-        <span><RouterLink to="/">Home</RouterLink></span>
-        <span><RouterLink to="/wordle">Wordle clone</RouterLink></span>
-        <span><RouterLink to="/spelling-bee">Spelling Bee clone</RouterLink></span>
+        <span><a href="https://github.com/sternard" target="_blank">GitHub</a></span>
+        <span><a href="mailto:stephenbernard@hotmail.co.uk" target="_blank">Support</a></span>
     </div>
 </template>
 
