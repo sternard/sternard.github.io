@@ -466,7 +466,7 @@
 
 .phone-frame {
   position: relative;
-  aspect-ratio: 9 / 19.4;
+  aspect-ratio: 1206 / 2622;
   padding: 7px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.34);
@@ -482,19 +482,8 @@
   width: calc(100% - 14px);
   height: calc(100% - 14px);
   border-radius: clamp(13px, 2.4vw, 27px);
+  image-rendering: auto;
   object-fit: cover;
-}
-
-.phone-island {
-  position: absolute;
-  z-index: 3;
-  top: 14px;
-  left: 50%;
-  width: 34%;
-  height: 16px;
-  border-radius: 999px;
-  background: #050a08;
-  transform: translateX(-50%);
 }
 
 .screen-fallback {

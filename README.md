@@ -26,7 +26,7 @@ Add three portrait iOS screenshots at these exact paths:
 ```text
 public/gaffer/club-overview.png
 public/gaffer/matchday.png
-public/gaffer/squad.png
+public/gaffer/results-fixtures.png
 ```
 
 The phone frames will display the images automatically. The Gaffer Discord invite is configured in `discordUrl` near the top of `src/views/HomeView.vue`.

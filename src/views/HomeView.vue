@@ -17,10 +17,10 @@ const gafferScreens = [
     label: 'Matchday',
   },
   {
-    src: '/gaffer/squad.png',
-    alt: 'Gaffer squad management gameplay screen',
+    src: '/gaffer/results-fixtures.png',
+    alt: 'Gaffer results and fixtures gameplay screen',
     number: '03',
-    label: 'Squad management',
+    label: 'Results & Fixtures',
   },
 ]
 
@@ -207,7 +207,6 @@ const utilityProjects = [
           <div class="phone-gallery" aria-label="Gaffer iOS gameplay screenshots">
             <figure v-for="screen in gafferScreens" :key="screen.src" class="phone-figure">
               <div class="phone-frame">
-                <div class="phone-island" aria-hidden="true"></div>
                 <div class="screen-fallback">
                   <span>Gameplay capture</span>
                   <strong>{{ screen.label }}</strong>
@@ -217,6 +216,9 @@ const utilityProjects = [
                   v-if="!failedScreens[screen.src]"
                   :src="screen.src"
                   :alt="screen.alt"
+                  width="1206"
+                  height="2622"
+                  decoding="async"
                   @error="failedScreens[screen.src] = true"
                 >
               </div>
@@ -386,7 +388,7 @@ const utilityProjects = [
           <a href="https://github.com/sternard" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="mailto:stephenbernard@hotmail.co.uk">Email ↗</a>
           <a href="https://discord.com/invite/kf9Uf6xtz" target="_blank" rel="noreferrer">Discord ↗</a>
-          <a href="#">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/stephen-bernard-885293b2/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
       </div>
     </footer>
