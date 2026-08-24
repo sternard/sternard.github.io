@@ -121,6 +121,19 @@ const utilityProjects = [
     href: 'https://github.com/sternard/Screen-Swap',
   },
 ]
+
+const academicPapers = [
+  {
+    index: 'P—01',
+    title: 'Research Design for Evaluating Machine-Learning Delivery-Delay Prediction',
+    href: '/essays/Research_Methods_Summative.pdf',
+  },
+  {
+    index: 'P—02',
+    title: 'Risk Assessment and Management Plan for a Satellite Navigation System',
+    href: '/essays/Risk%20Assessment%20and%20Management%20Plan.pdf',
+  },
+]
 </script>
 
 <template>
@@ -352,28 +365,38 @@ const utilityProjects = [
         <header class="section-heading section-heading--stacked">
           <p class="section-kicker">04 / Academic work</p>
           <div>
-            <h2>Essays, arguments<br>&amp; <em>open questions.</em></h2>
+            <h2>Academic research<br><em>&amp; essays</em></h2>
             <p>
-              A home for selected postgraduate writing—published for comfortable reading on the
-              web, with the original papers available alongside it.
+              Selected academic papers from my MSc in Computer Science, covering research methods, risk assessment and management planning.
             </p>
           </div>
         </header>
 
-        <article class="paper-placeholder">
-          <div class="paper-placeholder__number">P—01</div>
-          <div class="paper-placeholder__copy">
-            <p class="section-kicker">Postgraduate archive</p>
-            <h3>The first paper is being prepared for publication.</h3>
-            <p>
-              Each entry will include an abstract, full essay, citation details and a downloadable
-              PDF—designed as a proper reading experience rather than a list of attachments.
-            </p>
-          </div>
-          <div class="paper-placeholder__marks" aria-hidden="true">
-            <span>Abstract</span><span>Full text</span><span>PDF</span>
-          </div>
-        </article>
+        <div class="paper-list" aria-label="Academic papers">
+          <a
+            v-for="paper in academicPapers"
+            :key="paper.title"
+            class="paper-card"
+            :href="paper.href"
+            target="_blank"
+            rel="noreferrer"
+            :aria-label="`Read ${paper.title} (PDF, opens in a new tab)`"
+          >
+            <div class="paper-card__topline">
+              <span>{{ paper.index }}</span>
+              <span>MSc paper</span>
+            </div>
+            <div class="paper-card__body">
+              <h3>{{ paper.title }}</h3>
+              <span class="paper-card__arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="paper-card__meta">
+              <span>PDF</span>
+              <span>8 pages</span>
+              <span>Open paper</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
