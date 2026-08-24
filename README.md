@@ -1,51 +1,44 @@
-# portfolio
+# Stephen Bernard — portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue 3 portfolio for selected product work, public code, academic writing and audio/video editing.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Local development
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Create a production build in `docs/` with:
 
 ```sh
 npm run build
 ```
 
-### Run Headed Component Tests with [Cypress Component Testing](https://on.cypress.io/component)
+## Adding the missing portfolio material
 
-```sh
-npm run test:unit:dev # or `npm run test:unit` for headless testing
+The homepage deliberately uses honest placeholders where source material has not been supplied yet.
+
+### Gaffer
+
+Add three portrait iOS screenshots at these exact paths:
+
+```text
+public/gaffer/club-overview.png
+public/gaffer/matchday.png
+public/gaffer/squad.png
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+The phone frames will display the images automatically. The Gaffer Discord invite is configured in `discordUrl` near the top of `src/views/HomeView.vue`.
 
-```sh
-npm run test:e2e:dev
-```
+### Academic papers
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
+Replace the `paper-placeholder` article in `src/views/HomeView.vue` with paper cards or article routes. A strong entry should include a title, abstract, submission context, date, citation and downloadable PDF.
 
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+### Audio/video work
 
-```sh
-npm run build
-npm run test:e2e
-```
+Replace the `showreel-placeholder` block in `src/views/HomeView.vue` with links to the original published videos. Include the role performed on each piece (edit, mix, sound design, colour, and so on).
+
+## Deployment
+
+Vite writes the site to `docs/`, matching GitHub Pages deployments configured to serve the `/docs` directory on the main branch.
