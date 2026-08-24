@@ -1,6 +1,6 @@
 # Stephen Bernard — portfolio
 
-A Vue 3 portfolio for selected product work, public code, academic writing and audio/video editing.
+A Vue 3 portfolio for selected product work, test automation, public code and academic writing.
 
 ## Local development
 
@@ -34,10 +34,6 @@ The phone frames will display the images automatically. The Gaffer Discord invit
 ### Academic papers
 
 Replace the `paper-placeholder` article in `src/views/HomeView.vue` with paper cards or article routes. A strong entry should include a title, abstract, submission context, date, citation and downloadable PDF.
-
-### Audio/video work
-
-Replace the `showreel-placeholder` block in `src/views/HomeView.vue` with links to the original published videos. Include the role performed on each piece (edit, mix, sound design, colour, and so on).
 
 ## Deployment
 

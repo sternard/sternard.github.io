@@ -15,7 +15,6 @@ import { RouterLink } from 'vue-router'
         <a href="/#automation">Automation</a>
         <a href="/#code">Code</a>
         <a href="/#writing">Writing</a>
-        <a href="/#media">Media</a>
       </nav>
 
       <RouterLink class="header-contact" :to="{ path: '/', hash: '#contact' }">

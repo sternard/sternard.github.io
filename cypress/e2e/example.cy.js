@@ -7,7 +7,6 @@ describe('portfolio homepage', () => {
     cy.get('#gaffer').should('contain.text', 'Pre-release beta')
     cy.get('#code').should('contain.text', 'Storage Assistant')
     cy.get('#writing').should('contain.text', 'Postgraduate archive')
-    cy.get('#media').should('contain.text', 'The showreel is on the cutting room table.')
     cy.get('a[href="https://github.com/sternard/Storage-Assistant"]').should('have.length', 1)
 
     cy.get('a[href="/#code"]').click()

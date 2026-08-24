@@ -127,10 +127,10 @@ const utilityProjects = [
   <main id="main-content">
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero__intro">
-        <p class="eyebrow"><span></span> Software developer &amp; creative technologist</p>
+        <p class="eyebrow"><span></span> Software developer &amp; automation engineer</p>
         <h1 id="hero-title">Useful software.<br><em>Thoughtfully made.</em></h1>
         <p class="hero__lede">
-          I’m Stephen, a UK-based developer, building games, tools, automation systems and
+          I’m Stephen, a UK-based developer, building games, tools, automated testing systems and
           carefully crafted digital ideas.
         </p>
         <div class="hero__actions">
@@ -163,14 +163,13 @@ const utilityProjects = [
         <a href="#automation"><span>02</span> Automation</a>
         <a href="#code"><span>03</span> Code</a>
         <a href="#writing"><span>04</span> Writing</a>
-        <a href="#media"><span>05</span> Media</a>
       </div>
     </section>
 
     <section id="gaffer" class="gaffer-section">
       <div class="shell">
         <header class="section-heading section-heading--light">
-          <p class="section-kicker">01 / Featured build</p>
+          <p class="section-kicker">01 / Featured game</p>
           <div>
             <h2>Gaffer</h2>
             <p>A football manager simulator game built for Android and iOS.</p>
@@ -183,7 +182,7 @@ const utilityProjects = [
               Make the calls that shape a club—from the squad sheet to the final whistle.
             </p>
             <p>
-              Gaffer is currently in pre-release beta. Join the Discord to test the app, give feedback and help shape the future of the game.
+              Gaffer is currently in pre-release beta. I developed the backend systems for the game, as well as composing all the music, implementing the development for Andoird and iOS, and designing the UI.
             </p>
             <dl class="project-facts">
               <div><dt>Platform</dt><dd>Android, iOS</dd></div>
@@ -376,45 +375,13 @@ const utilityProjects = [
       </div>
     </section>
 
-    <section id="media" class="media-section">
-      <div class="shell">
-        <header class="section-heading section-heading--light">
-          <p class="section-kicker">05 / Audio &amp; video</p>
-          <div>
-            <h2>Cut to rhythm.<br><em>Mixed for feeling.</em></h2>
-            <p>
-              Selected video edits and audio mixes, with a clear note on the role I played in each
-              production.
-            </p>
-          </div>
-        </header>
-
-        <div class="showreel-placeholder">
-          <div class="showreel-placeholder__visual">
-            <div class="play-mark" aria-hidden="true">▶</div>
-            <div class="timeline" aria-hidden="true">
-              <span v-for="bar in 34" :key="bar" :style="{ '--bar': `${(bar * 17) % 74 + 18}%` }"></span>
-            </div>
-          </div>
-          <div class="showreel-placeholder__copy">
-            <p class="section-kicker">Selected work / Coming soon</p>
-            <h3>The showreel is on the cutting room table.</h3>
-            <p>
-              Final links will open the original published videos and credit the edit, mix and
-              production contribution for each piece.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer id="contact" class="site-footer">
       <div class="shell site-footer__top">
         <p class="section-kicker">Have something interesting in mind?</p>
         <a href="mailto:stephenbernard@hotmail.co.uk">Let’s make it real. <span>↗</span></a>
       </div>
       <div class="shell site-footer__bottom">
-        <p>Stephen Bernard<br><span>Software developer &amp; creative technologist</span></p>
+        <p>Stephen Bernard<br><span>Software developer &amp; automation engineer</span></p>
         <div>
           <a href="https://github.com/sternard" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="mailto:stephenbernard@hotmail.co.uk">Email ↗</a>
