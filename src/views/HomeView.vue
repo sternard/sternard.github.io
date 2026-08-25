@@ -97,8 +97,8 @@ const projects = [
   {
     index: '03',
     name: 'Portfolio',
-    description: 'Built as a home for product work, public code, writing and media.',
-    note: 'A responsive GitHub Pages build with routed experiments and browser-level coverage for its key portfolio journeys.',
+    description: 'Built as a home for product work, automation experience, public code and academic writing.',
+    note: 'A responsive GitHub Pages portfolio with accessible in-page navigation and browser-level coverage of its core content, links and mobile layout.',
     tags: ['Vue', 'Cypress'],
     href: 'https://github.com/sternard/sternard.github.io',
   },
