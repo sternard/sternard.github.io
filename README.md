@@ -9,11 +9,9 @@ A Vue 3 portfolio designed as a companion to my CV and GitHub profile. It brings
 - **Code** — selected open-source repositories and smaller macOS utilities available for review and collaboration.
 - **Writing** — two MSc papers provided as directly accessible PDFs.
 
-The app also retains the routed Wordle and Spelling Bee experiments at `/wordle` and `/spelling-bee`.
-
 ## Technology
 
-- Vue 3 and Vue Router
+- Vue 3
 - Vite
 - Cypress end-to-end testing
 - GitHub Pages, served from the generated `docs/` directory
