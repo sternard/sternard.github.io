@@ -220,17 +220,23 @@ const academicPapers = [
           <div class="phone-gallery" aria-label="Gaffer iOS gameplay screenshots">
             <figure v-for="screen in gafferScreens" :key="screen.src" class="phone-figure">
               <div class="phone-frame">
-                <div class="screen-fallback">
+                <div
+                  v-if="failedScreens[screen.src]"
+                  class="screen-fallback"
+                  role="img"
+                  :aria-label="`${screen.alt} unavailable`"
+                >
                   <span>Gameplay capture</span>
                   <strong>{{ screen.label }}</strong>
-                  <small>Add {{ screen.src }}</small>
+                  <small>Screenshot unavailable</small>
                 </div>
                 <img
-                  v-if="!failedScreens[screen.src]"
+                  v-else
                   :src="screen.src"
                   :alt="screen.alt"
                   width="1206"
                   height="2622"
+                  loading="lazy"
                   decoding="async"
                   @error="failedScreens[screen.src] = true"
                 >
