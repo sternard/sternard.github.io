@@ -7,7 +7,8 @@
   --forest: #123d2b;
   --forest-dark: #0b2b1e;
   --lime: #d2ff62;
-  --blue: #608cff;
+  --blue: #3157c8;
+  --blue-on-dark: #608cff;
   --line: rgba(23, 32, 29, 0.18);
   --shell: min(1240px, calc(100vw - 48px));
 }

@@ -398,8 +398,6 @@ const academicPapers = [
             </div>
             <div class="paper-card__meta">
               <span>PDF</span>
-              <span>8 pages</span>
-              <span>Open paper</span>
             </div>
           </a>
         </div>

@@ -781,7 +781,7 @@
 }
 
 .automation-heading h2 em {
-  color: var(--blue);
+  color: var(--blue-on-dark);
   font-weight: 400;
 }
 
@@ -855,7 +855,7 @@
 
 .automation-console__label {
   margin-block: 45px 19px;
-  color: var(--blue);
+  color: var(--blue-on-dark);
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -898,7 +898,7 @@
 .automation-console__readout span {
   width: 3px;
   height: var(--signal);
-  background: var(--blue);
+  background: var(--blue-on-dark);
 }
 
 .automation-console__readout span:nth-child(3n) {
@@ -935,7 +935,7 @@
 }
 
 .experience-card:hover {
-  border-color: var(--blue);
+  border-color: var(--blue-on-dark);
   background: rgba(255, 255, 255, 0.08);
   transform: translateY(-4px);
 }
@@ -1134,7 +1134,7 @@
   justify-content: flex-start;
   gap: 22px;
   border-top: 1px solid rgba(255, 255, 255, 0.28);
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 253, 248, 0.85);
 }
 
 .paper-card__meta span:last-child {
